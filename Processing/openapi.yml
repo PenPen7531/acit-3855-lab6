@@ -1,0 +1,62 @@
+---
+openapi: 3.0.0
+info:
+  title: Employee management RESTful API
+  description: "Employee management system that tracks employees within a company. They will be able to add, delete, and modify employees. They will also be able to use thie API to request and submit leave for their employees."
+  contact:
+    email: jwang536@my.bcit.ca
+  version: 1.0.0
+
+paths:
+  /stats:
+    get:
+      tags:
+      - administrators
+      summary: gets new time reqeusts 
+      operationId: app.get_stats
+      description: Gets time requests after a specific timestamp
+      responses:
+        '200':
+          description: Successfully returned a list of time off requests
+          content:
+            application/json:
+              schema:
+              
+                items:
+                  $ref: '#/components/schemas/stats'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+components:
+  schemas:
+    stats:
+      required:
+      - num_req_off
+      - num_employees
+      - max_days_off
+      - max_hours_off
+      properties:
+        num_req_off:
+          type: integer
+          example: 3000
+        num_employees:
+          type: integer
+          example: 5000
+        max_days_off:
+          type: integer
+          
+          example: 50
+        max_hours_off:
+          type: integer
+          example: 150
+
+     
+      type: object
+        

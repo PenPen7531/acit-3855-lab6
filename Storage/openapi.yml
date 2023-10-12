@@ -1,0 +1,216 @@
+---
+openapi: 3.0.0
+info:
+  title: Employee management RESTful API
+  description: "Employee management system that tracks employees within a company. They will be able to add, delete, and modify employees. They will also be able to use thie API to request and submit leave for their employees."
+  contact:
+    email: jwang536@my.bcit.ca
+  version: 1.0.0
+servers:
+- url: /
+tags:
+- name: managers
+  description: Managers of enterprise that will keep track of employee information and employement status. They will use these fucntions to modify employees within an enterprise.
+paths:
+
+
+
+    
+
+
+
+    
+
+  /employee:
+
+    get:
+      tags:
+      - employees
+      summary: gets new employee entries
+      operationId: app.get_employees
+      description: Gets employees after timestamp reading
+      parameters:
+        - name: timestamp
+          in: query
+          description: Limits the number of items on a page
+          schema:
+            type: string
+            format: date-time
+            example: 2016-08-29T09:12:33Z
+      responses:
+        '200':
+          description: Successfully returned a list of employee entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EmployeeItem'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+
+    post:
+      tags:
+      - managers
+      summary: Adds an employee to the system
+      description: Adds an employee to the system. Add them to correct accounts such as payroll and software accounts.
+      operationId: app.add_employee
+      requestBody:
+        description: Information of new employee submitted as post request
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EmployeeItem'
+      responses:
+        "201":
+          description: Employee created
+        "400":
+          description: "Invalid input, employee data invalid"
+        "409":
+          description: Employee already exists
+
+  /requestleave:
+
+    get:
+      tags:
+      - employees
+      summary: gets new time reqeusts 
+      operationId: app.get_requests
+      description: Gets time requests after a specific timestamp
+      parameters:
+        - name: timestamp
+          in: query
+          description: Limits the number of items on a page
+          schema:
+            type: string
+            format: date-time
+            example: 2016-08-29T09:12:30Z
+      responses:
+        '200':
+          description: Successfully returned a list of time off requests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TimeRequest'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    
+    post:
+      tags:
+      - managers
+      summary: Employee Request Time off
+      description: Managers are able to reqeust time for their employees. Will be used to keep track of working hours and pay deductions.
+      operationId: app.request_time
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TimeRequest'
+      responses:
+        "201":
+          description: Request Submitted
+        "400":
+          description: "Invalid input, data invalid"
+        "409":
+          description: Employee already has requested time off between dates
+
+    
+components:
+  schemas:
+    EmployeeItem:
+      required:
+      - address
+  
+      - employee_id
+      - first_name
+      - last_name
+      - manager_code
+      - phone_number
+      - position
+      - salary
+      type: object
+      properties:
+        first_name:
+          type: string
+          example: Leon
+        last_name:
+          type: string
+          example: Kennedy
+        employee_id:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        address:
+          type: string
+          example: 1010 Tens palace
+        salary:
+          type: integer
+          example: 160000
+        birth_date:
+          type: string
+          format: date
+          example: 0011-09-23
+        phone_number:
+          maxLength: 10
+          minLength: 10
+          type: integer
+          example: 9999999999
+        position:
+          type: string
+          example: IT-01
+        manager_code:
+          maxLength: 4
+          minLength: 4
+          type: integer
+          example: 5534
+    TimeRequest:
+      required:
+      - days_off
+      - employee_id
+      - end_date
+      - hours_off
+      - reason
+      - start_date
+      type: object
+      properties:
+        # employee: 
+          # $ref: '#/components/schemas/EmployeeItem'
+        employee_id:
+          type: string
+          format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+        start_date:
+          type: string
+          format: date
+          example: 2023-07-17
+        end_date:
+          type: string
+          format: date
+          example: 2023-08-17
+        hours_off:
+          type: integer
+          example: 150
+        days_off:
+          type: integer
+          example: 30
+        reason:
+          type: string
+          example: Vacation
+
