@@ -41,3 +41,18 @@
 2023-10-19 08:12:16,427 - basicLogger - ERROR - No more messages found
 2023-10-19 08:12:16,428 - basicLogger - ERROR - Could not find Employee at index 300
 2023-10-19 08:12:20,177 - basicLogger - INFO - Retrieving employee at index 100
+2023-10-19 09:36:35,686 - basicLogger - INFO - Retrieving employee at index 0
+2023-10-19 09:36:42,185 - basicLogger - INFO - Retrieving employee at index 100
+2023-10-19 09:36:50,643 - basicLogger - INFO - Retrieving employee at index 500
+2023-10-19 09:36:51,934 - basicLogger - ERROR - No more messages found
+2023-10-19 09:36:51,935 - basicLogger - ERROR - Could not find Employee at index 500
+2023-10-19 09:36:57,468 - basicLogger - INFO - Retrieving employee at index 200
+2023-10-19 09:37:05,826 - basicLogger - INFO - Retrieving employee at index 300
+2023-10-19 09:37:07,870 - basicLogger - ERROR - No more messages found
+2023-10-19 09:37:07,871 - basicLogger - ERROR - Could not find Employee at index 300
+2023-10-19 09:37:34,703 - basicLogger - INFO - Retrieving Time Off Request at index 300
+2023-10-19 09:37:36,005 - basicLogger - ERROR - No more messages found
+2023-10-19 09:37:36,005 - basicLogger - ERROR - Could not find BP at index 300
+2023-10-19 09:37:41,474 - basicLogger - INFO - Retrieving Time Off Request at index 200
+2023-10-19 09:37:48,756 - basicLogger - INFO - Retrieving Time Off Request at index 100
+2023-10-19 09:37:52,256 - basicLogger - INFO - Retrieving Time Off Request at index 0

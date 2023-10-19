@@ -59,7 +59,8 @@ def request_time(body):
     u_id = log_action('Request Time')
 
     body['trace_id'] = str(u_id)
-
+    
+    logger.info(f"Received Event: Trace ID {body['trace_id']}")
     client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
     topic = client.topics[str.encode(app_config['events']['topic'])]
     producer = topic.get_sync_producer()
@@ -71,6 +72,7 @@ def request_time(body):
     msg_str = json.dumps(msg)
     producer.produce(msg_str.encode('utf-8'))
     # Return NoContent with the reponse code 201
+    logger.info(f"Sent Event: Trace ID {body['trace_id']}")
     return NoContent, 201
 
 
@@ -80,7 +82,7 @@ def add_employee(body):
     u_id = log_action('Add Employee')
 
     body['trace_id'] = str(u_id)
-
+    logger.info(f"Received Event: Trace ID {body['trace_id']}")
     # Sends a post request to the storage/DB program that will save the entries into a DB
     # Specifies the localhost (Can be changed when put into multiple different VMs, content type: json, and the json data sent will be the argument data)
     client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
@@ -93,8 +95,10 @@ def add_employee(body):
     }
     msg_str = json.dumps(msg)
 
-    producer.produce(msg_str.encode('utf-8'))
     
+    producer.produce(msg_str.encode('utf-8'))
+    # Return NoContent with the reponse code 201
+    logger.info(f"Sent Event: Trace ID {body['trace_id']}")
     # Returns NoContent with the response code from the DB server
     return NoContent, 201
 

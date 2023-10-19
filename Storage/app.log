@@ -10857,3 +10857,309 @@
 2023-10-19 08:10:33,764 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T08:10:31', 'payload': {'days_off': 88, 'employee_id': '4f513441-4912-467f-b814-ea3fb4993e31', 'end_date': '2023-08-17', 'hours_off': 965, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '82f6794f-f802-46b9-9eae-f15c28b55ae3'}}
 2023-10-19 08:10:33,765 - basicLogger - INFO - Adding Request Off
 2023-10-19 08:10:33,766 - basicLogger - INFO - Data has been entered
+2023-10-19 09:29:58,580 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:29:58', 'payload': {'days_off': 30, 'employee_id': '550e8400-e29b-41d4-a716-446655440000', 'end_date': '2023-08-17', 'hours_off': 150, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'ce19f63a-8fbf-488d-a211-e7c0dd3df883'}}
+2023-10-19 09:29:58,581 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:29:58,587 - basicLogger - INFO - Data has been entered
+2023-10-19 09:35:55,674 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:35:55', 'payload': {'address': '24 Second Avenue', 'birth_date': '1955-02-25', 'employee_id': '2e5b0cd9-2e62-4036-b4dd-193313df9026', 'first_name': 'gvbxcvyetm', 'last_name': 'najmbxmpmd', 'manager_code': 9861, 'phone_number': 861687953, 'position': 'IT-08', 'salary': 91427, 'trace_id': '2e48b335-1470-45f1-8eb6-1f337990664a'}}
+2023-10-19 09:35:55,674 - basicLogger - INFO - Adding Employee
+2023-10-19 09:35:55,678 - basicLogger - INFO - Data has been entered
+2023-10-19 09:35:56,786 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:35:55', 'payload': {'address': '800 Middle Avenue', 'birth_date': '1966-08-04', 'employee_id': 'adb6fb6f-c687-4288-ab4e-023e1c87707b', 'first_name': 'jzkifdhabq', 'last_name': 'njtbbwlyqy', 'manager_code': 4964, 'phone_number': 776449252, 'position': 'IT-08', 'salary': 85663, 'trace_id': '9bf4729d-88de-4c10-8ca6-5545a6e37691'}}
+2023-10-19 09:35:56,786 - basicLogger - INFO - Adding Employee
+2023-10-19 09:35:56,787 - basicLogger - INFO - Data has been entered
+2023-10-19 09:35:57,075 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:35:55', 'payload': {'address': '2600 Middlefield Road', 'birth_date': '1961-08-08', 'employee_id': 'c0c431cd-b642-409f-a02d-9e909268a49c', 'first_name': 'pmqtmqgebu', 'last_name': 'rjdniqvgme', 'manager_code': 3261, 'phone_number': 223962693, 'position': 'IT-08', 'salary': 123606, 'trace_id': '5bc2a56c-ad9e-4637-975f-efeaadeca095'}}
+2023-10-19 09:35:57,077 - basicLogger - INFO - Adding Employee
+2023-10-19 09:35:57,079 - basicLogger - INFO - Data has been entered
+2023-10-19 09:35:57,363 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:35:55', 'payload': {'address': 'address_1', 'birth_date': '1961-06-16', 'employee_id': '11825a09-7f30-425f-8639-30d57ab834df', 'first_name': 'wvzaqpnxsl', 'last_name': 'btabqzbvkd', 'manager_code': 7846, 'phone_number': 179858532, 'position': 'IT-03', 'salary': 70899, 'trace_id': '915f819f-8642-4bca-a85e-bc0e2490e506'}}
+2023-10-19 09:35:57,365 - basicLogger - INFO - Adding Employee
+2023-10-19 09:35:57,366 - basicLogger - INFO - Data has been entered
+2023-10-19 09:35:57,650 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:35:55', 'payload': {'address': '500 Arbor Road', 'birth_date': '2003-12-05', 'employee_id': '7c0ed4d0-36b4-4354-99ce-2b49fca5e84a', 'first_name': 'jlhqfndqjw', 'last_name': 'ikqcecqqlx', 'manager_code': 7966, 'phone_number': 834632832, 'position': 'IT-04', 'salary': 83299, 'trace_id': '20aa5eb9-e9bc-4660-91d5-85305f36e8d6'}}
+2023-10-19 09:35:57,651 - basicLogger - INFO - Adding Employee
+2023-10-19 09:35:57,653 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:01,126 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:01', 'payload': {'days_off': 24, 'employee_id': '8b063af3-3fbd-4ff5-b377-8902cbe34425', 'end_date': '2023-08-17', 'hours_off': 180, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '4700f5ec-57b8-43f8-ba25-88b30084406b'}}
+2023-10-19 09:36:01,127 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:36:01,128 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:01,410 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:01', 'payload': {'days_off': 100, 'employee_id': '3b93314d-0770-4805-955b-c500cd0d07d3', 'end_date': '2023-08-17', 'hours_off': 779, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '6e478bfe-2c32-4e1f-afce-199efd3d375b'}}
+2023-10-19 09:36:01,410 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:36:01,411 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:01,691 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:01', 'payload': {'days_off': 45, 'employee_id': '8f97fefc-e684-4dce-a7fd-626311b4dd43', 'end_date': '2023-08-17', 'hours_off': 171, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '8da2e3a0-5ee0-43c2-b2bf-e092b7c97ad7'}}
+2023-10-19 09:36:01,691 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:36:01,692 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:01,970 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:01', 'payload': {'days_off': 53, 'employee_id': '2e790264-970f-4913-a175-4672e89de628', 'end_date': '2023-08-17', 'hours_off': 724, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '58c14b59-d74d-49ff-96bf-363b19afa1c4'}}
+2023-10-19 09:36:01,971 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:36:01,971 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:02,255 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:01', 'payload': {'days_off': 131, 'employee_id': '19ee0673-3020-4999-80cb-7fd6368d11ea', 'end_date': '2023-08-17', 'hours_off': 908, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '3323be7e-bc14-4440-97ce-8a7df9a8ea02'}}
+2023-10-19 09:36:02,256 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:36:02,257 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:06,625 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:06', 'payload': {'address': '800 Middle Avenue', 'birth_date': '2022-07-19', 'employee_id': 'e945fc76-6cc3-4542-95f8-ecf6f9027325', 'first_name': 'mvoejurowj', 'last_name': 'fvdgnmowph', 'manager_code': 5597, 'phone_number': 848997231, 'position': 'IT-01', 'salary': 127811, 'trace_id': '022b0b16-f369-49b1-b2ac-83d67f78c9d3'}}
+2023-10-19 09:36:06,626 - basicLogger - INFO - Adding Employee
+2023-10-19 09:36:06,626 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:06,909 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:06', 'payload': {'address': '2510 Middlefield Road', 'birth_date': '1959-01-16', 'employee_id': '7df91b03-efba-44a7-91a6-0bbf549aea8f', 'first_name': 'radfwluuku', 'last_name': 'lqbqbbwdgc', 'manager_code': 2293, 'phone_number': 426847931, 'position': 'IT-02', 'salary': 89669, 'trace_id': '98e84308-b78a-4d48-93dc-84ed332528af'}}
+2023-10-19 09:36:06,910 - basicLogger - INFO - Adding Employee
+2023-10-19 09:36:06,911 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:07,189 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:06', 'payload': {'address': '2140 Euclid Avenue.', 'birth_date': '1983-04-05', 'employee_id': '9eb4bc14-51f7-4794-8661-a4317955612b', 'first_name': 'quqsueeaba', 'last_name': 'usijgaitst', 'manager_code': 9832, 'phone_number': 440036353, 'position': 'IT-05', 'salary': 123697, 'trace_id': 'e76a8363-c7d7-4697-bd82-a2deb1495fb9'}}
+2023-10-19 09:36:07,189 - basicLogger - INFO - Adding Employee
+2023-10-19 09:36:07,189 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:07,488 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:06', 'payload': {'address': '1044 Middlefield Road', 'birth_date': '2009-08-18', 'employee_id': '58c0497e-3903-442e-b23c-3485e3d93355', 'first_name': 'utifivvsek', 'last_name': 'jwsppmdmjo', 'manager_code': 7968, 'phone_number': 393366523, 'position': 'IT-06', 'salary': 110063, 'trace_id': '20f6b42a-4964-4fe9-b2cc-0dece73eb9a0'}}
+2023-10-19 09:36:07,489 - basicLogger - INFO - Adding Employee
+2023-10-19 09:36:07,490 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:07,777 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:06', 'payload': {'address': '1044 Middlefield Road', 'birth_date': '1985-08-20', 'employee_id': 'bedcc7d4-ae29-40fb-9ed8-c648a9b5ede0', 'first_name': 'nbgeoqkrdq', 'last_name': 'itbgmqrtkr', 'manager_code': 1051, 'phone_number': 680054670, 'position': 'IT-08', 'salary': 85016, 'trace_id': '3cfa33d4-7b0b-486a-aab5-905376eaedd7'}}
+2023-10-19 09:36:07,777 - basicLogger - INFO - Adding Employee
+2023-10-19 09:36:07,779 - basicLogger - INFO - Data has been entered
+2023-10-19 09:36:12,058 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:11', 'payload': {'days_off': 136, 'employee_id': '645a012a-3d02-42d9-9f0b-ea64f7b227c2', 'end_date': '2023-08-17', 'hours_off': 600, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '6c8bd472-34d3-4841-a27c-3ac0866f6419'}}
+2023-10-19 09:36:12,059 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:36:12,060 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:00,376 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:11', 'payload': {'days_off': 136, 'employee_id': '645a012a-3d02-42d9-9f0b-ea64f7b227c2', 'end_date': '2023-08-17', 'hours_off': 600, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '6c8bd472-34d3-4841-a27c-3ac0866f6419'}}
+2023-10-19 09:38:00,376 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:00,380 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:01,494 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:11', 'payload': {'days_off': 141, 'employee_id': '7157b790-fac2-46ca-bd48-79d32287b440', 'end_date': '2023-08-17', 'hours_off': 486, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '903e59c8-b156-4248-bd7b-364cf5eea67d'}}
+2023-10-19 09:38:01,494 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:01,494 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:01,779 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:11', 'payload': {'days_off': 58, 'employee_id': 'fcded87e-cce0-4f09-962e-11975692c737', 'end_date': '2023-08-17', 'hours_off': 875, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '580fce4d-9650-4b81-9c25-8ea79ca3d018'}}
+2023-10-19 09:38:01,779 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:01,779 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:02,061 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:12', 'payload': {'days_off': 5, 'employee_id': 'cd2432f9-e71e-4d9f-a75e-6671bedcca99', 'end_date': '2023-08-17', 'hours_off': 99, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'fd1c4dd9-30d6-481d-9a9f-1ae27a919255'}}
+2023-10-19 09:38:02,062 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:02,063 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:02,359 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:12', 'payload': {'days_off': 73, 'employee_id': '65a81261-0800-40d8-b70f-94348547e2ee', 'end_date': '2023-08-17', 'hours_off': 917, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '40c4c5e2-c4c6-4043-a9cc-ed735e102cf8'}}
+2023-10-19 09:38:02,359 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:02,359 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:02,663 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:17', 'payload': {'address': '1500 Valencia Street', 'birth_date': '1998-01-30', 'employee_id': '13a86de1-3d57-489c-8681-675d520d7d43', 'first_name': 'ffimalqunn', 'last_name': 'abvrsmhdqv', 'manager_code': 9370, 'phone_number': 925954485, 'position': 'IT-04', 'salary': 90656, 'trace_id': '09e8482b-02f9-4285-b2f8-014a579a75c4'}}
+2023-10-19 09:38:02,663 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:02,664 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:02,946 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:17', 'payload': {'address': '399 Marine Parkway.', 'birth_date': '1950-09-24', 'employee_id': '03ac73c0-785f-44f0-b067-b8c37958b632', 'first_name': 'yblnqdihqj', 'last_name': 'uxkjbmkkng', 'manager_code': 7493, 'phone_number': 901705939, 'position': 'IT-03', 'salary': 81616, 'trace_id': 'a9174ffe-3e3f-4f4c-98af-375f822831e0'}}
+2023-10-19 09:38:02,947 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:02,948 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:03,227 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:17', 'payload': {'address': '660 Veterans Blvd.', 'birth_date': '2000-12-21', 'employee_id': 'd781f93b-c5fd-4551-a161-51bbd58b6a0e', 'first_name': 'qulhqanifl', 'last_name': 'goeyranhws', 'manager_code': 2312, 'phone_number': 162231492, 'position': 'IT-02', 'salary': 92640, 'trace_id': '027768fb-6de7-40d7-8651-91d108194b25'}}
+2023-10-19 09:38:03,228 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:03,228 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:03,511 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:17', 'payload': {'address': '1161 South Bernardo', 'birth_date': '1968-05-16', 'employee_id': '509fe0a2-5676-4f22-9b79-e233371cdc66', 'first_name': 'uinajjwpzj', 'last_name': 'ixlrpksvyh', 'manager_code': 8759, 'phone_number': 688593887, 'position': 'IT-02', 'salary': 61040, 'trace_id': 'b8d41687-9e12-422f-8c11-9bc051a61d1d'}}
+2023-10-19 09:38:03,513 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:03,514 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:03,799 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:17', 'payload': {'address': '409 South Spruce Avenue', 'birth_date': '1970-04-04', 'employee_id': '67d96039-7ca4-43f3-9d14-14217fdecb36', 'first_name': 'jisdfvfxrm', 'last_name': 'kqzcjwgzht', 'manager_code': 1921, 'phone_number': 234010152, 'position': 'IT-03', 'salary': 88039, 'trace_id': '1e18f1a3-509b-47e2-ba2d-133c2379ed19'}}
+2023-10-19 09:38:03,801 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:03,802 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:04,085 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:22', 'payload': {'days_off': 62, 'employee_id': 'c9491094-fdf3-4bdf-b5f3-5ba7514c5658', 'end_date': '2023-08-17', 'hours_off': 993, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'c633e730-5543-4809-ae87-f55bb2527720'}}
+2023-10-19 09:38:04,085 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:04,085 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:04,378 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:22', 'payload': {'days_off': 116, 'employee_id': 'de3d1e61-83dc-431a-97d1-fafdd8b80994', 'end_date': '2023-08-17', 'hours_off': 343, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '18ac1725-8523-4360-a3fb-8725bc8705b8'}}
+2023-10-19 09:38:04,379 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:04,379 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:04,664 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:22', 'payload': {'days_off': 50, 'employee_id': 'e59c8024-0054-49ad-acbf-b984ca12e2ae', 'end_date': '2023-08-17', 'hours_off': 443, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'fec46fe3-d6dd-4416-a657-d75742350eb0'}}
+2023-10-19 09:38:04,664 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:04,666 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:04,949 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:22', 'payload': {'days_off': 36, 'employee_id': '2cd70660-3370-41c1-a36e-5ff6b3889215', 'end_date': '2023-08-17', 'hours_off': 805, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'a2c93b14-14b1-48cd-9ce2-44f58ac8a95b'}}
+2023-10-19 09:38:04,951 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:04,952 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:05,239 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:23', 'payload': {'days_off': 46, 'employee_id': 'a4fbf2c9-027b-4cbf-82ad-c040be6c813e', 'end_date': '2023-08-17', 'hours_off': 199, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '5fadda2b-9f7d-4a92-aa44-b55237532adc'}}
+2023-10-19 09:38:05,241 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:05,242 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:05,539 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:28', 'payload': {'address': '114 Fifth Avenue', 'birth_date': '2017-12-29', 'employee_id': '2063b789-87b4-4838-98fc-e5410fca6a29', 'first_name': 'bgwqiqzdzm', 'last_name': 'ytpavobmff', 'manager_code': 9279, 'phone_number': 718836450, 'position': 'IT-01', 'salary': 116874, 'trace_id': '4f24adf9-f7b3-48cf-a2a3-fe49cacf5637'}}
+2023-10-19 09:38:05,540 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:05,541 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:05,826 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:28', 'payload': {'address': '19 West 39th Avenue', 'birth_date': '1996-09-22', 'employee_id': 'c16b5366-6bd8-4d08-9852-3814b9fe0cb7', 'first_name': 'bhnlwcdvhv', 'last_name': 'pwdghajwtt', 'manager_code': 9625, 'phone_number': 860194063, 'position': 'IT-07', 'salary': 133084, 'trace_id': 'c56df0da-98f8-4ae7-b18e-26ed76699f38'}}
+2023-10-19 09:38:05,827 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:05,828 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:06,110 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:28', 'payload': {'address': '123 El Camino Real', 'birth_date': '1952-07-02', 'employee_id': '39f908e8-493e-4fca-a285-b83161f91648', 'first_name': 'gewplmmavl', 'last_name': 'tabfcvmmex', 'manager_code': 1382, 'phone_number': 187874722, 'position': 'IT-06', 'salary': 95070, 'trace_id': '8357fe9a-406f-4434-bc17-df0030db7f71'}}
+2023-10-19 09:38:06,112 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:06,113 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:06,403 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:28', 'payload': {'address': '2013 Avenue of the fellows', 'birth_date': '1956-06-28', 'employee_id': 'e3bc0d7a-2394-4577-be7d-b90ea42a7756', 'first_name': 'mzzfuzofcw', 'last_name': 'emqajlfjcx', 'manager_code': 9350, 'phone_number': 648949071, 'position': 'IT-03', 'salary': 110296, 'trace_id': 'd8e20ee1-0fc2-4499-a227-dcfe749cdbaf'}}
+2023-10-19 09:38:06,405 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:06,406 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:06,704 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:28', 'payload': {'address': 'address_1', 'birth_date': '1981-02-12', 'employee_id': '69e56dfb-0e22-4b7a-86a0-1b84a59ef381', 'first_name': 'dgknneukuk', 'last_name': 'zveowpuwlm', 'manager_code': 2753, 'phone_number': 297859602, 'position': 'IT-02', 'salary': 105879, 'trace_id': '46535c0a-5faa-4f05-afa6-79567b90918d'}}
+2023-10-19 09:38:06,706 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:06,706 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:06,996 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:33', 'payload': {'days_off': 53, 'employee_id': 'd972b858-ad1d-4a48-8190-c9b7b4ec6fc3', 'end_date': '2023-08-17', 'hours_off': 24, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'a972222c-dc8c-4d52-97cc-0065948ce60e'}}
+2023-10-19 09:38:06,997 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:06,998 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:07,277 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:33', 'payload': {'days_off': 89, 'employee_id': 'e6badfbd-e91f-48ff-a7a7-42e250b54984', 'end_date': '2023-08-17', 'hours_off': 672, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'ff279188-3ff1-4485-a11b-bb545d26ea2e'}}
+2023-10-19 09:38:07,278 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:07,278 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:07,561 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:33', 'payload': {'days_off': 57, 'employee_id': '407cb4a8-db22-4b28-a96d-df106a56d17f', 'end_date': '2023-08-17', 'hours_off': 661, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '18c62334-5ae8-4c07-be6a-370154a2553a'}}
+2023-10-19 09:38:07,561 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:07,562 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:07,855 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:33', 'payload': {'days_off': 114, 'employee_id': '78d35db1-99bb-4ee0-bcf8-6aadeea05a55', 'end_date': '2023-08-17', 'hours_off': 488, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'a358060c-1cb0-47b8-94f5-e16c2d17b91b'}}
+2023-10-19 09:38:07,857 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:07,858 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:08,143 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:33', 'payload': {'days_off': 8, 'employee_id': 'fcf2fc06-b93e-429c-815a-246041c8c80a', 'end_date': '2023-08-17', 'hours_off': 390, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '6656f640-b451-451d-bf09-4bd6015c7f30'}}
+2023-10-19 09:38:08,145 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:08,145 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:08,432 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:39', 'payload': {'address': '500 Arbor Road', 'birth_date': '1970-01-27', 'employee_id': '3dcc90f5-f1e8-48ce-88a9-cf785edb294e', 'first_name': 'xvuxleyorn', 'last_name': 'ekwmpgvayl', 'manager_code': 7012, 'phone_number': 967449391, 'position': 'IT-07', 'salary': 143762, 'trace_id': 'bf5572cd-39f3-43f7-ae80-6824d57106ad'}}
+2023-10-19 09:38:08,433 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:08,434 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:08,717 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:39', 'payload': {'address': '800 Middle Avenue', 'birth_date': '1990-05-03', 'employee_id': '117a1ca3-b25a-4016-911f-c06d16aa3563', 'first_name': 'ynbsqlxdtp', 'last_name': 'hlssnoriay', 'manager_code': 2265, 'phone_number': 533678893, 'position': 'IT-08', 'salary': 75499, 'trace_id': 'af2f3a5f-60e2-46e4-b771-7eae5453478c'}}
+2023-10-19 09:38:08,718 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:08,718 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:09,001 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:39', 'payload': {'address': '2600 Middlefield Road', 'birth_date': '1981-09-24', 'employee_id': '8ddfefb3-9288-4002-96cc-b4c267123bd4', 'first_name': 'jtvmivhrlf', 'last_name': 'rmpxepjgnl', 'manager_code': 7659, 'phone_number': 358728210, 'position': 'IT-01', 'salary': 99017, 'trace_id': '25d88f4c-260a-45b6-a133-369eafce0fbd'}}
+2023-10-19 09:38:09,002 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:09,003 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:09,283 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:39', 'payload': {'address': '24 Second Avenue', 'birth_date': '2015-05-27', 'employee_id': 'dc5662ed-4153-41dd-a0ab-fd8918b057aa', 'first_name': 'dghkttqmmw', 'last_name': 'kxcqaccygg', 'manager_code': 2401, 'phone_number': 271227347, 'position': 'IT-03', 'salary': 142365, 'trace_id': 'db6cf41e-6e90-4fd6-849c-fd61dcfeaba5'}}
+2023-10-19 09:38:09,284 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:09,285 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:09,574 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:39', 'payload': {'address': '800 Middle Avenue', 'birth_date': '2016-03-22', 'employee_id': 'd12b9661-e0b8-4b85-9a42-64d93d68859d', 'first_name': 'dergidcdyx', 'last_name': 'xvuojqieug', 'manager_code': 9358, 'phone_number': 222356643, 'position': 'IT-03', 'salary': 127598, 'trace_id': 'c6e2ee28-359c-4e65-8256-d82f2d6f7ad9'}}
+2023-10-19 09:38:09,576 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:09,577 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:09,866 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:44', 'payload': {'days_off': 64, 'employee_id': 'a104abf7-ebc1-4630-8ff9-34334b7790aa', 'end_date': '2023-08-17', 'hours_off': 849, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '2f4f9cfd-a063-42ad-b66f-ecd252f2d430'}}
+2023-10-19 09:38:09,867 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:09,868 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:10,152 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:44', 'payload': {'days_off': 55, 'employee_id': '953eb7d7-f084-4c9d-a081-e20a77dd1e28', 'end_date': '2023-08-17', 'hours_off': 681, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'ba5707f2-3103-4ce8-af4c-0ddae87efca8'}}
+2023-10-19 09:38:10,153 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:10,153 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:10,434 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:44', 'payload': {'days_off': 5, 'employee_id': 'd16d2866-8bc2-410a-901e-87d0930b101c', 'end_date': '2023-08-17', 'hours_off': 764, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'cb15d286-6073-45e9-b6b7-e09e1eaf351e'}}
+2023-10-19 09:38:10,435 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:10,436 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:10,733 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:44', 'payload': {'days_off': 84, 'employee_id': '98465519-e23a-4fb9-b8f1-388083ea5b3a', 'end_date': '2023-08-17', 'hours_off': 537, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '8b95fb3f-8132-4ac9-b236-436a98d99ac2'}}
+2023-10-19 09:38:10,735 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:10,736 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:11,022 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:44', 'payload': {'days_off': 148, 'employee_id': '65216a42-0a40-4ddc-81e6-24198d91b1fc', 'end_date': '2023-08-17', 'hours_off': 802, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'f82ee911-89d2-40d6-9774-a55ed9dfe073'}}
+2023-10-19 09:38:11,023 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:11,025 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:11,319 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:50', 'payload': {'address': '1044 Middlefield Road', 'birth_date': '1960-07-06', 'employee_id': 'a353bdbb-7807-4210-92bf-d32ee93a4771', 'first_name': 'qlobnopxcg', 'last_name': 'ikjbxdjrhz', 'manager_code': 7906, 'phone_number': 280126730, 'position': 'IT-09', 'salary': 72532, 'trace_id': '7dce9966-a820-4f66-b40d-c6e13fb7e3a7'}}
+2023-10-19 09:38:11,320 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:11,321 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:11,619 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:50', 'payload': {'address': '2140 Euclid Avenue.', 'birth_date': '1959-01-19', 'employee_id': '9929b4ea-2f6a-4916-82f0-982553943df3', 'first_name': 'yrrzqbpcuk', 'last_name': 'mmlgtxstyh', 'manager_code': 2830, 'phone_number': 134821849, 'position': 'IT-08', 'salary': 67242, 'trace_id': '52dbedd7-1ba8-4d8b-94b9-258748e47b17'}}
+2023-10-19 09:38:11,619 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:11,620 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:11,901 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:50', 'payload': {'address': '2510 Middlefield Road', 'birth_date': '1998-03-13', 'employee_id': '114a7df7-f1d4-4e68-9711-cde723fe8ca7', 'first_name': 'ktnlotahhm', 'last_name': 'hwtkivafjc', 'manager_code': 2210, 'phone_number': 846480720, 'position': 'IT-02', 'salary': 72997, 'trace_id': '5d7aac46-8ec3-4975-bd13-c05af59788dc'}}
+2023-10-19 09:38:11,902 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:11,902 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:12,182 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:50', 'payload': {'address': '1044 Middlefield Road', 'birth_date': '2015-02-27', 'employee_id': 'beb5dac0-82dc-416e-a778-ab4590e04a1f', 'first_name': 'zlgtyxcwli', 'last_name': 'sbhqaluhfr', 'manager_code': 9785, 'phone_number': 854135799, 'position': 'IT-09', 'salary': 60944, 'trace_id': '3f080bfb-7cf6-482d-87ee-88cba20123b2'}}
+2023-10-19 09:38:12,183 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:12,185 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:12,474 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:36:50', 'payload': {'address': '399 Marine Parkway.', 'birth_date': '2016-11-29', 'employee_id': '7a2da5bd-4c08-420f-bd0c-7503edff7786', 'first_name': 'okeflcnexy', 'last_name': 'eeouhwsbmv', 'manager_code': 7474, 'phone_number': 728896970, 'position': 'IT-09', 'salary': 74439, 'trace_id': 'b80c4a01-a613-4ef2-bd77-eb900be5c550'}}
+2023-10-19 09:38:12,475 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:12,476 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:12,760 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:55', 'payload': {'days_off': 116, 'employee_id': '9acf40cc-73d3-4653-b892-1631d086b583', 'end_date': '2023-08-17', 'hours_off': 152, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'd7a06306-01cc-45a1-9e6c-68a328d6790e'}}
+2023-10-19 09:38:12,762 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:12,763 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:13,045 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:55', 'payload': {'days_off': 60, 'employee_id': '27ba6975-f01d-4646-9aae-c23ea862a53e', 'end_date': '2023-08-17', 'hours_off': 735, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '60291172-7610-479b-a34a-cac8d89f6de8'}}
+2023-10-19 09:38:13,046 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:13,046 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:13,325 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:55', 'payload': {'days_off': 26, 'employee_id': '135b8ad4-774b-4982-8303-96f48828fbcd', 'end_date': '2023-08-17', 'hours_off': 74, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'cad84277-1507-48ed-9634-26352a524647'}}
+2023-10-19 09:38:13,326 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:13,327 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:13,621 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:55', 'payload': {'days_off': 28, 'employee_id': '3a340b95-d7a2-46fe-b858-fd64ec716b2f', 'end_date': '2023-08-17', 'hours_off': 332, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '1e456867-ca7f-45ce-b3ef-beb9be041647'}}
+2023-10-19 09:38:13,622 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:13,623 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:13,919 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:36:55', 'payload': {'days_off': 38, 'employee_id': 'eea7b632-6ef2-4e1a-90a8-e1b565ad0729', 'end_date': '2023-08-17', 'hours_off': 897, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '09be025f-ded9-4057-917f-17c816e37545'}}
+2023-10-19 09:38:13,921 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:13,922 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:14,207 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:01', 'payload': {'address': '660 Veterans Blvd.', 'birth_date': '2017-07-29', 'employee_id': '02477ce9-46b0-48d4-9f9c-3a530898560d', 'first_name': 'spksxrkmxb', 'last_name': 'hrntlhtdha', 'manager_code': 4166, 'phone_number': 470865845, 'position': 'IT-09', 'salary': 124801, 'trace_id': 'aee30f02-7d83-4c52-8e39-84c0b4389860'}}
+2023-10-19 09:38:14,208 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:14,209 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:14,496 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:01', 'payload': {'address': '1500 Valencia Street', 'birth_date': '1990-03-04', 'employee_id': '935e7765-d89e-4382-a65f-42cdef871f08', 'first_name': 'crkfnzncqs', 'last_name': 'rtmxfzqqbn', 'manager_code': 2565, 'phone_number': 543148663, 'position': 'IT-01', 'salary': 132150, 'trace_id': 'd3995ada-0a49-41bf-89da-e6f4b0c19b40'}}
+2023-10-19 09:38:14,497 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:14,498 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:14,779 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:01', 'payload': {'address': '1161 South Bernardo', 'birth_date': '1985-12-30', 'employee_id': '7ca38707-ffac-40f6-8fce-d1fb71bd5813', 'first_name': 'cyqpfygzjf', 'last_name': 'krnfsxdxxb', 'manager_code': 8138, 'phone_number': 820351933, 'position': 'IT-02', 'salary': 102665, 'trace_id': 'e4e9ee00-5f41-4ecf-bcc0-705dae91867a'}}
+2023-10-19 09:38:14,780 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:14,781 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:15,079 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:01', 'payload': {'address': '409 South Spruce Avenue', 'birth_date': '1969-05-30', 'employee_id': 'ff5f3d95-31ce-4856-b18d-23ec7a73b5c7', 'first_name': 'cdajsfonku', 'last_name': 'fzpernydob', 'manager_code': 9290, 'phone_number': 980276086, 'position': 'IT-06', 'salary': 74851, 'trace_id': '8c950974-a4b7-436e-a30c-fef6f28bed60'}}
+2023-10-19 09:38:15,080 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:15,081 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:15,366 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:01', 'payload': {'address': '114 Fifth Avenue', 'birth_date': '1994-10-16', 'employee_id': '0a31ff9d-d2cc-4e88-b5c3-4043caf29624', 'first_name': 'opbuhgwutc', 'last_name': 'mgkfaqzmhz', 'manager_code': 8423, 'phone_number': 652563400, 'position': 'IT-06', 'salary': 101164, 'trace_id': 'a3e9799e-e379-4bb6-871e-9bf4aa91ca4d'}}
+2023-10-19 09:38:15,368 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:15,369 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:15,656 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:06', 'payload': {'days_off': 40, 'employee_id': '62a01172-12c4-4bdc-86b7-79993dcd9e90', 'end_date': '2023-08-17', 'hours_off': 200, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'b484c1b4-50ab-4c4f-a60c-d6eab898002e'}}
+2023-10-19 09:38:15,659 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:15,660 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:15,942 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:06', 'payload': {'days_off': 65, 'employee_id': '8e23a2c8-48f3-4126-bf03-13d941332c28', 'end_date': '2023-08-17', 'hours_off': 876, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'c725fc87-3a1c-4f06-975c-8a89ffcfc36e'}}
+2023-10-19 09:38:15,943 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:15,944 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:16,222 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:06', 'payload': {'days_off': 150, 'employee_id': '53ff07b8-2fc2-4943-8fbb-a372aa70c7c4', 'end_date': '2023-08-17', 'hours_off': 723, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'bbb3be82-cab3-4bec-9522-e0dca99af629'}}
+2023-10-19 09:38:16,223 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:16,224 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:16,506 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:06', 'payload': {'days_off': 55, 'employee_id': '359d216a-2b10-44c5-8139-0771bc1d6bfd', 'end_date': '2023-08-17', 'hours_off': 395, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '11c275bb-0f48-4d60-9376-505d1eaf82d6'}}
+2023-10-19 09:38:16,507 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:16,509 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:16,791 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:06', 'payload': {'days_off': 144, 'employee_id': '689a5576-78de-4f63-8c48-cdda2065e672', 'end_date': '2023-08-17', 'hours_off': 342, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'f52026cf-60dd-49e0-ab19-70edce8084a9'}}
+2023-10-19 09:38:16,792 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:16,794 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:17,097 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:12', 'payload': {'address': '2013 Avenue of the fellows', 'birth_date': '1957-06-30', 'employee_id': 'c00e6a0a-b694-4464-997d-1653dc58057b', 'first_name': 'vhmsvlwaqp', 'last_name': 'bqiltjzcig', 'manager_code': 3061, 'phone_number': 166375474, 'position': 'IT-09', 'salary': 88818, 'trace_id': '02596987-8fd8-4bf1-9d3c-c435813c265a'}}
+2023-10-19 09:38:17,098 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:17,099 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:17,383 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:12', 'payload': {'address': '19 West 39th Avenue', 'birth_date': '1983-01-12', 'employee_id': 'f476b394-7ae8-4a57-9850-6671de79fd13', 'first_name': 'bnpfnlutzg', 'last_name': 'tqqvyfgdpi', 'manager_code': 7447, 'phone_number': 482603656, 'position': 'IT-06', 'salary': 95624, 'trace_id': '598207b7-43eb-4e2f-a594-5686757687cb'}}
+2023-10-19 09:38:17,385 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:17,386 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:17,672 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:12', 'payload': {'address': '123 El Camino Real', 'birth_date': '1957-08-19', 'employee_id': '0552df78-1f17-4b3e-afd1-e3b4f60e94f7', 'first_name': 'lxqcquqcsp', 'last_name': 'vrwgroetbm', 'manager_code': 2710, 'phone_number': 817215377, 'position': 'IT-08', 'salary': 87941, 'trace_id': '5c636163-50da-40b9-910b-b224753d4b7e'}}
+2023-10-19 09:38:17,673 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:17,674 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:17,961 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:12', 'payload': {'address': 'address_1', 'birth_date': '1958-07-11', 'employee_id': '9f3e84a4-dd80-4753-b970-e0e9325979e7', 'first_name': 'loazhvovfe', 'last_name': 'pjpyvsziar', 'manager_code': 9687, 'phone_number': 732708848, 'position': 'IT-09', 'salary': 63667, 'trace_id': '6e589c98-60c5-44f6-ae7a-c098457e4ab6'}}
+2023-10-19 09:38:17,962 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:17,963 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:18,272 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:12', 'payload': {'address': '2600 Middlefield Road', 'birth_date': '2021-01-10', 'employee_id': '052ba16d-afc1-41c0-97c7-fa3eea0eecbb', 'first_name': 'vhndqhiinr', 'last_name': 'ihyqgxhktw', 'manager_code': 2830, 'phone_number': 198113480, 'position': 'IT-08', 'salary': 140089, 'trace_id': 'ed02900b-0454-4877-8720-ae72ac069816'}}
+2023-10-19 09:38:18,273 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:18,274 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:18,566 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:17', 'payload': {'days_off': 46, 'employee_id': '5eb45464-5b14-4a91-abc6-13619a360fa1', 'end_date': '2023-08-17', 'hours_off': 56, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '6aa987bc-1d82-4378-a6d8-9f133563d569'}}
+2023-10-19 09:38:18,567 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:18,568 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:18,857 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:17', 'payload': {'days_off': 116, 'employee_id': 'bf482fe0-a5d5-4f05-9831-e56ff6637dcd', 'end_date': '2023-08-17', 'hours_off': 635, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '459bf4fc-8493-4624-9361-467f426cee2c'}}
+2023-10-19 09:38:18,859 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:18,861 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:19,143 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:17', 'payload': {'days_off': 91, 'employee_id': '314b30c6-482e-48b1-9c69-eb8454f689b8', 'end_date': '2023-08-17', 'hours_off': 553, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '3569a869-8b10-47bc-ae43-d8c06c7eb104'}}
+2023-10-19 09:38:19,144 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:19,145 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:19,434 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:17', 'payload': {'days_off': 28, 'employee_id': '69dbf69a-a8a5-4e53-be03-51403ba959c1', 'end_date': '2023-08-17', 'hours_off': 357, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'e395f1ed-0f26-40b5-ab72-65216575abdd'}}
+2023-10-19 09:38:19,435 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:19,435 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:19,732 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:17', 'payload': {'days_off': 110, 'employee_id': '88cf2e43-bb5f-4d48-b7f3-d404c0dd11ae', 'end_date': '2023-08-17', 'hours_off': 517, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '7b6cb758-a182-416b-ba36-1e408fc46970'}}
+2023-10-19 09:38:19,734 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:19,735 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:20,027 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:23', 'payload': {'address': '24 Second Avenue', 'birth_date': '1951-07-21', 'employee_id': '402d3390-7fd0-48a4-9cba-d2e1614dcb1d', 'first_name': 'kqkoidzdoe', 'last_name': 'guwrumpppa', 'manager_code': 4522, 'phone_number': 396386219, 'position': 'IT-06', 'salary': 65924, 'trace_id': '75c3c4ef-2451-4d2a-a529-d70305380c1c'}}
+2023-10-19 09:38:20,028 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:20,029 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:20,322 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:23', 'payload': {'address': '800 Middle Avenue', 'birth_date': '2004-04-01', 'employee_id': '26a719e5-bc14-454c-8c9a-b868d091e7b2', 'first_name': 'ceoiemawjy', 'last_name': 'toylzubaen', 'manager_code': 4597, 'phone_number': 244117501, 'position': 'IT-02', 'salary': 79856, 'trace_id': '62d9f15a-6b03-4959-a7e7-1f3bd859a152'}}
+2023-10-19 09:38:20,324 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:20,325 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:20,610 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:23', 'payload': {'address': '500 Arbor Road', 'birth_date': '2006-11-19', 'employee_id': 'd3acb0d7-572d-48f1-b1b6-4e821df5149e', 'first_name': 'iopshbxhsj', 'last_name': 'clsmjmqqfs', 'manager_code': 9074, 'phone_number': 539812206, 'position': 'IT-01', 'salary': 112048, 'trace_id': '6303ce35-38ab-4ddc-9f8d-3263c302046f'}}
+2023-10-19 09:38:20,611 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:20,612 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:20,912 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:23', 'payload': {'address': '800 Middle Avenue', 'birth_date': '1954-01-31', 'employee_id': 'e76070cc-5a97-4db7-b9cf-36645e342bd5', 'first_name': 'fjlarqdwem', 'last_name': 'yqeyzepptu', 'manager_code': 2899, 'phone_number': 122606604, 'position': 'IT-05', 'salary': 149710, 'trace_id': '71795de0-4d2f-4ba2-8736-1265d4eb353f'}}
+2023-10-19 09:38:20,913 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:20,914 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:21,200 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:23', 'payload': {'address': '2510 Middlefield Road', 'birth_date': '1963-06-05', 'employee_id': '78f7f320-b25d-4be4-a4f5-58eafd1623aa', 'first_name': 'xwvylrhhcy', 'last_name': 'wbvzfozxfv', 'manager_code': 6094, 'phone_number': 701146575, 'position': 'IT-02', 'salary': 145561, 'trace_id': '1c4b49cf-93e6-4382-860b-6a998483446e'}}
+2023-10-19 09:38:21,202 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:21,203 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:21,494 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:28', 'payload': {'days_off': 6, 'employee_id': '921ea251-55b5-4344-b8e7-536d58eab6eb', 'end_date': '2023-08-17', 'hours_off': 25, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '6991fb23-6797-4f5e-afdb-a7f5fd553451'}}
+2023-10-19 09:38:21,495 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:21,496 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:21,782 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:28', 'payload': {'days_off': 30, 'employee_id': '799bda31-b591-4b8b-9de7-966ee07b0c6b', 'end_date': '2023-08-17', 'hours_off': 745, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '09e8c4b5-8c5e-4aab-b1ef-54c20fe724bf'}}
+2023-10-19 09:38:21,783 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:21,785 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:22,071 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:28', 'payload': {'days_off': 41, 'employee_id': '2b258845-d590-414b-9551-3ad4cf1a9215', 'end_date': '2023-08-17', 'hours_off': 587, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '8d2f2261-66f1-441f-9087-fd7fbf39309b'}}
+2023-10-19 09:38:22,072 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:22,073 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:22,354 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:28', 'payload': {'days_off': 19, 'employee_id': '6c0c8bfb-d1fc-404b-ac8e-e392d0816b08', 'end_date': '2023-08-17', 'hours_off': 995, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '12f35e6c-45e8-466d-b742-85d76c512862'}}
+2023-10-19 09:38:22,355 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:22,355 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:22,638 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:28', 'payload': {'days_off': 113, 'employee_id': 'cff59962-2713-477a-af96-6bad5f17b208', 'end_date': '2023-08-17', 'hours_off': 956, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '50b2798e-a3e3-4366-ba79-34f62d3b72ea'}}
+2023-10-19 09:38:22,640 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:22,641 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:22,929 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:33', 'payload': {'address': '1044 Middlefield Road', 'birth_date': '1974-12-03', 'employee_id': '68563a81-bb5a-4800-b44c-55a60c5bb7b1', 'first_name': 'nbtksynemx', 'last_name': 'djwjyrialg', 'manager_code': 9058, 'phone_number': 756428994, 'position': 'IT-04', 'salary': 123684, 'trace_id': '0508101b-e0ce-41ee-b33b-6f1359fe6803'}}
+2023-10-19 09:38:22,930 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:22,932 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:23,213 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:33', 'payload': {'address': '2140 Euclid Avenue.', 'birth_date': '1989-05-26', 'employee_id': '9bb533ac-011a-4a3a-a83f-2aeb5c2eca77', 'first_name': 'ezdoaaksvm', 'last_name': 'tshrsuxxqf', 'manager_code': 7909, 'phone_number': 241574234, 'position': 'IT-01', 'salary': 73172, 'trace_id': '46ccf378-b043-4dd5-90e9-ad85b04d9dc5'}}
+2023-10-19 09:38:23,215 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:23,216 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:23,505 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:33', 'payload': {'address': '1044 Middlefield Road', 'birth_date': '2002-07-05', 'employee_id': '68888e59-98b4-46de-8537-56d261384f3b', 'first_name': 'rusxqxeclu', 'last_name': 'xirhgpvrno', 'manager_code': 8217, 'phone_number': 984138576, 'position': 'IT-08', 'salary': 146582, 'trace_id': 'a56587d7-8cf4-4014-99c7-17cc409b1b04'}}
+2023-10-19 09:38:23,506 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:23,506 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:23,831 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:34', 'payload': {'address': '399 Marine Parkway.', 'birth_date': '2012-11-11', 'employee_id': 'f7e4825d-9b4b-4f1d-a8e2-d05844cb952d', 'first_name': 'wtntnlgwuc', 'last_name': 'dtbcfftxme', 'manager_code': 8264, 'phone_number': 958828965, 'position': 'IT-07', 'salary': 80888, 'trace_id': '62c27167-aa23-4786-9a10-6085ff582fe0'}}
+2023-10-19 09:38:23,832 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:23,832 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:24,147 - basicLogger - INFO - Message: {'type': 'employee', 'datetime': '2023-10-19T09:37:34', 'payload': {'address': '660 Veterans Blvd.', 'birth_date': '1968-02-15', 'employee_id': '286885bf-2ac1-4e23-9abc-b8d7344662ab', 'first_name': 'fajlevsmbq', 'last_name': 'mwbcqwszrh', 'manager_code': 3526, 'phone_number': 566992215, 'position': 'IT-04', 'salary': 110827, 'trace_id': '3e548cc7-7ba4-481c-9fd2-54305b842144'}}
+2023-10-19 09:38:24,148 - basicLogger - INFO - Adding Employee
+2023-10-19 09:38:24,149 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:24,442 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:39', 'payload': {'days_off': 26, 'employee_id': '2bda53fd-6da9-4af0-91fe-e8d5c380aee6', 'end_date': '2023-08-17', 'hours_off': 384, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '18b82864-6ef4-4b24-8f23-b49f24b6fc81'}}
+2023-10-19 09:38:24,444 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:24,445 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:24,745 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:39', 'payload': {'days_off': 31, 'employee_id': '8b5104bf-2213-4b8a-9dae-28c9fc2e8170', 'end_date': '2023-08-17', 'hours_off': 627, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '77956611-b9c2-46a9-b10c-3b92ac2a000e'}}
+2023-10-19 09:38:24,746 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:24,748 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:25,042 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:39', 'payload': {'days_off': 16, 'employee_id': 'f14e71e8-8c82-4a0a-b211-e271c6eb46b6', 'end_date': '2023-08-17', 'hours_off': 260, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '4854e446-8564-4e10-a19a-d373e6a54064'}}
+2023-10-19 09:38:25,043 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:25,043 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:25,327 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:39', 'payload': {'days_off': 79, 'employee_id': 'd27b010c-bcc0-4d38-9f60-506a95aff81d', 'end_date': '2023-08-17', 'hours_off': 310, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'd4f8d9cd-805d-4440-825e-940f58a4a39c'}}
+2023-10-19 09:38:25,328 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:25,328 - basicLogger - INFO - Data has been entered
+2023-10-19 09:38:25,616 - basicLogger - INFO - Message: {'type': 'time', 'datetime': '2023-10-19T09:37:39', 'payload': {'days_off': 59, 'employee_id': '996315cc-b945-4cd6-a6c9-28fdbe7d5c82', 'end_date': '2023-08-17', 'hours_off': 781, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': 'b11af972-5ffa-4713-81d3-06cd5a2a5e10'}}
+2023-10-19 09:38:25,617 - basicLogger - INFO - Adding Request Off
+2023-10-19 09:38:25,618 - basicLogger - INFO - Data has been entered
