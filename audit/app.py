@@ -10,7 +10,7 @@ from pykafka import KafkaClient
 from threading import Thread
 
 
-PORT = 9000
+PORT = 8110
 
 # App configuration file
 with open('app_conf.yml', 'r') as f:
