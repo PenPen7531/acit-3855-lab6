@@ -1,7 +1,9 @@
 version: 1
 datastore:
   user: root
-  password: Password
+
+  # LEFT BLANK
+  password: -
   hostname: acit-3855-kakfa-jwang.eastus.cloudapp.azure.com
   port: 3306
   db: events
