@@ -9,8 +9,8 @@ from sqlalchemy.orm import sessionmaker
 from employee import Employee
 from request_leave import RequestLeave
 import datetime
-import mysql.connector
-import pymysql
+# import mysql.connector
+# import pymysql
 import yaml
 import logging
 import logging.config
