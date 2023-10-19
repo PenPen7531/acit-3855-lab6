@@ -96,12 +96,12 @@ def populate_stats():
     for dict in content:
         
         # Get the maximum number of days off 
-        if int(dict['days_off']) > max_days:
-            max_days = dict['days_off']
+        if int(dict['days_off']) > int(max_days):
+            max_days = int(dict['days_off'])
 
         # Get the maximum number of hours off
-        if int(dict['hours_off']) > max_hours:
-            max_hours = dict['hours_off']
+        if int(dict['hours_off']) > int(max_hours):
+            max_hours = int(dict['hours_off'])
 
     # Update dictionary
     data['max_days_off'] = max_days
