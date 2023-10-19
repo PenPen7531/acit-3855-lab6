@@ -13,37 +13,28 @@ tags:
   description: Managers of enterprise that will keep track of employee information and employement status. They will use these fucntions to modify employees within an enterprise.
 paths:
 
-
-
-    
-
-
-
-    
-
   /employee:
 
     get:
       tags:
       - employees
       summary: gets new employee entries
-      operationId: app.get_employees
+      operationId: app.get_employee
       description: Gets employees after timestamp reading
       parameters:
-        - name: timestamp
+        - name: index
           in: query
-          description: Limits the number of items on a page
+          description: Index of desired query
           schema:
-            type: string
-            format: date-time
-            example: 2016-08-29T09:12:33Z
+            type: integer
+            example: 2
       responses:
         '200':
           description: Successfully returned a list of employee entries
           content:
             application/json:
               schema:
-                type: array
+                type: object
                 items:
                   $ref: '#/components/schemas/EmployeeItem'
         '400':
@@ -65,23 +56,22 @@ paths:
       tags:
       - employees
       summary: gets new time reqeusts 
-      operationId: app.get_requests
-      description: Gets time requests after a specific timestamp
+      operationId: app.get_request
+      description: Gets time request based on index
       parameters:
-        - name: timestamp
+        - name: index
           in: query
           description: Limits the number of items on a page
           schema:
-            type: string
-            format: date-time
-            example: 2016-08-29T09:12:30Z
+            type: integer
+            example: 1
       responses:
         '200':
-          description: Successfully returned a list of time off requests
+          description: Successfully returned time off request
           content:
             application/json:
               schema:
-                type: array
+                type: object
                 items:
                   $ref: '#/components/schemas/TimeRequest'
         '400':
@@ -154,8 +144,7 @@ components:
       - start_date
       type: object
       properties:
-        # employee: 
-          # $ref: '#/components/schemas/EmployeeItem'
+        
         employee_id:
           type: string
           format: uuid

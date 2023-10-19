@@ -3,3 +3,8 @@ eventstore1:
   url: http://localhost:8090/requestleave
 eventstore2:
   url: http://localhost:8090/employee
+
+events:
+  hostname: acit-3855-kakfa-jwang.eastus.cloudapp.azure.com
+  port: 9092
+  topic: events

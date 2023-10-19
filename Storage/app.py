@@ -14,6 +14,10 @@ import pymysql
 import yaml
 import logging
 import logging.config
+import json
+from pykafka import KafkaClient
+from pykafka.common import OffsetType
+from threading import Thread
 
 
 
@@ -43,66 +47,9 @@ def log_data(event_name, table, trace_id):
     logger.debug(f"Stored event {event_name} request in {table} table with a trace id of {trace_id}")
 
 
-def add_employee(body):
-    "Converts and stores the new employee information into the Employees DB table. Information provided from the port 8080 server by API request"
-
-    # Opens the DB session
-    session = DB_SESSION()
-
-    # Creates the SQL entry from python information
-    emp = Employee(
-        body['trace_id'],
-        body['employee_id'],
-        body['address'],
-        body['birth_date'],
-        body['first_name'],
-        body['last_name'],
-        body['manager_code'],
-        body['phone_number'],
-        body['position'],
-        body['salary']
-    )
-   
-    # Adds entry to the table
-    session.add(emp)
-
-    # Commits changes and closes DB session
-    session.commit()
-    session.close()
-
-    log_data('Add Employee', 'employees', body['trace_id'])
-
-    # Return 201 success
-    return NoContent, 201
-
-def request_time(body):
-    "Stores the leave request information into the Request_Leave DB Table. Information provided from port 8080 server by API request"
-    # Opens the database
-
-    
-    session = DB_SESSION()
-
-    # Creates the SQL entry from python information
-    lr = RequestLeave(  body['trace_id'],
-                        body['employee_id'],
-                        body['days_off'],
-                        body['start_date'],
-                        body['end_date'],
-                        body['hours_off'],
-                        body['reason'])
 
 
-    # Adds entry to table
-    session.add(lr)
 
-    # Commits changes and closes DB session
-    session.commit()
-    session.close()
-
-    log_data('Request Leave', 'request_leave', body['trace_id'])
-
-    # Return 201 success
-    return NoContent, 201
 
 
 def get_employees(timestamp):
@@ -139,6 +86,83 @@ def get_requests(timestamp):
 
 
 
+def process_messages():
+    """ Process event messages """
+    hostname = "%s:%d" % (app_config["events"]["hostname"],app_config["events"]["port"])
+    client = KafkaClient(hosts=hostname)
+    topic = client.topics[str.encode(app_config["events"]["topic"])]
+
+    # Create a consume on a consumer group, that only reads new messages
+    # (uncommitted messages) when the service re-starts (i.e., it doesn't
+    # read all the old messages from the history in the message queue).
+    consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST)
+    
+    trace_ids = []
+    
+    # This is blocking - it will wait for a new message
+    for msg in consumer:
+        session = DB_SESSION()
+        msg_str = msg.value.decode('utf-8')
+        msg = json.loads(msg_str)
+        # logger.info("Message:%s" % msg)
+        payload = msg["payload"]
+        logger.info("Message: %s" % msg)
+        if payload['trace_id'] not in trace_ids:
+            trace_ids.append(payload['trace_id'])
+            if msg["type"] == "time": # Change this to your event type
+            # # Store the event1 (i.e., the payload) to the DB
+                
+                
+                logger.info("Adding Request Off")
+                # Creates the SQL entry from python information
+                data = RequestLeave(  payload['trace_id'],
+                                    payload['employee_id'],
+                                    payload['days_off'],
+                                    payload['start_date'],
+                                    payload['end_date'],
+                                    payload['hours_off'],
+                                    payload['reason'])
+
+                
+
+            
+            
+                
+
+        
+        
+            elif msg["type"] == "employee": # Change this to your event type
+                # Store the event2 (i.e., the payload) to the DB
+
+            
+                logger.info("Adding Employee")
+                # Creates the SQL entry from python information
+                data = Employee(
+                    payload['trace_id'],
+                    payload['employee_id'],
+                    payload['address'],
+                    payload['birth_date'],
+                    payload['first_name'],
+                    payload['last_name'],
+                    payload['manager_code'],
+                    payload['phone_number'],
+                    payload['position'],
+                    payload['salary']
+                )
+                
+            # Adds entry to the table
+            session.add(data)
+
+                
+
+
+                
+        logger.info("Data has been entered")
+        # Commit the new message as being read
+        session.commit()
+        session.close()
+        consumer.commit_offsets()
+
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
@@ -146,4 +170,7 @@ app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 
 
 if __name__ == "__main__":
-    app.run(port=PORT, debug=True)
+    t1=Thread(target=process_messages)
+    t1.setDaemon(True)
+    t1.start()
+    app.run(port=PORT, host="0.0.0.0")

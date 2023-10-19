@@ -9264,3 +9264,25 @@ Updated Statistics:
 	Last Updated: 2023-10-12T08:32:17Z 
 2023-10-12 08:32:21,789 - basicLogger - INFO - Period Processing has ended
 2023-10-12 08:32:22,683 - basicLogger - INFO - Start Periodic Processing
+2023-10-13 10:32:22,993 - basicLogger - INFO - Start Periodic Processing
+2023-10-13 10:32:26,618 - basicLogger - INFO - Status code 200 recieved by /employee: Retrieved 10 entries
+2023-10-13 10:32:28,990 - basicLogger - INFO - Status code 200 recieved by /requestleave: Retrieved 12 entries
+2023-10-13 10:32:28,991 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 10
+	Number of new request leave entries: 12
+	Max number off days off:30
+	Max number of hours off: 150
+	Last Updated: 2023-10-13T10:32:23Z 
+2023-10-13 10:32:28,992 - basicLogger - INFO - Period Processing has ended
+2023-10-13 10:32:32,988 - basicLogger - INFO - Start Periodic Processing
+2023-10-13 10:32:35,336 - basicLogger - INFO - Status code 200 recieved by /employee: Retrieved 0 entries
+2023-10-13 10:32:37,690 - basicLogger - INFO - Status code 200 recieved by /requestleave: Retrieved 0 entries
+2023-10-13 10:32:37,692 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 0
+	Number of new request leave entries: 0
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-13T10:32:32Z 
+2023-10-13 10:32:37,694 - basicLogger - INFO - Period Processing has ended

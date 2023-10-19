@@ -8,7 +8,7 @@ import requests
 import yaml
 import logging
 import logging.config
-
+from pykafka import KafkaClient
 import uuid
 
 # File and Event Constants
@@ -23,7 +23,7 @@ with open('app_conf.yml', 'r') as f:
 
 
 
-# WORK ON THIS! FSS
+
 
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
@@ -60,13 +60,18 @@ def request_time(body):
 
     body['trace_id'] = str(u_id)
 
-    response = requests.post(app_config['eventstore1']['url'], headers={'Content-type': 'application/json'}, json=body)
-
-    log_reponse('Request Time', u_id, response.status_code)
-    
-
-    # Return NoContent with the reponse code from the DB server
-    return NoContent, response.status_code
+    client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
+    topic = client.topics[str.encode(app_config['events']['topic'])]
+    producer = topic.get_sync_producer()
+    msg = { "type": "time",
+    "datetime" :
+    datetime.datetime.now().strftime(
+    "%Y-%m-%dT%H:%M:%S"),
+    "payload": body }
+    msg_str = json.dumps(msg)
+    producer.produce(msg_str.encode('utf-8'))
+    # Return NoContent with the reponse code 201
+    return NoContent, 201
 
 
 def add_employee(body):
@@ -78,14 +83,20 @@ def add_employee(body):
 
     # Sends a post request to the storage/DB program that will save the entries into a DB
     # Specifies the localhost (Can be changed when put into multiple different VMs, content type: json, and the json data sent will be the argument data)
-    response = requests.post(app_config['eventstore2']['url'], headers={'Content-type': 'application/json'}, json=body)
+    client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
+    topic = client.topics[str.encode(app_config['events']['topic'])]
+    producer = topic.get_sync_producer()
+    msg = {     
+        "type": "employee",
+        "datetime" : datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+        "payload": body 
+    }
+    msg_str = json.dumps(msg)
 
-    
-
-    log_reponse('Add Employee', u_id, response.status_code)
+    producer.produce(msg_str.encode('utf-8'))
     
     # Returns NoContent with the response code from the DB server
-    return NoContent, response.status_code
+    return NoContent, 201
 
 
 

@@ -1,0 +1,4 @@
+events:
+  hostname: acit-3855-kakfa-jwang.eastus.cloudapp.azure.com
+  port: 9092
+  topic: events
