@@ -8,7 +8,7 @@ import logging
 import logging.config
 from pykafka import KafkaClient
 from threading import Thread
-
+from flask_cors import CORS, cross_origin
 
 PORT = 8110
 
@@ -82,5 +82,7 @@ app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 
 if __name__ == "__main__":
-    
+    app = connexion.FlaskApp(__name__, specification_dir='')
+    CORS(app.app)
+    app.app.config['CORS_HEADERS'] = 'Content-Type'
     app.run(port=PORT, host="0.0.0.0")

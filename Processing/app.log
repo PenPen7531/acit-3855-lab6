@@ -9286,3 +9286,367 @@ Updated Statistics:
 	Max number of hours off: 0
 	Last Updated: 2023-10-13T10:32:32Z 
 2023-10-13 10:32:37,694 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:37:58,724 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:03,729 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:08,727 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:13,731 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:18,727 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:23,736 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:28,728 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:33,730 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:38,731 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:43,740 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:48,728 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:53,726 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:38:58,735 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:03,728 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:08,739 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:13,736 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:18,729 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:23,738 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:28,738 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:33,731 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:36,065 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:39:38,413 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:39:38,728 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:41,411 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:39:43,854 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:39:48,732 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:51,033 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:39:53,331 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:39:53,740 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:39:56,035 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:39:58,312 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:39:58,729 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:01,055 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:03,355 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:03,734 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:06,049 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:08,370 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:08,729 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:11,012 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:13,305 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:13,736 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:16,000 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:18,294 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:18,733 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:21,025 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:23,289 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:23,738 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:26,049 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:28,407 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:28,730 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:31,002 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:33,282 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:33,739 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:36,084 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:38,407 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:51,147 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:53,508 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:40:55,786 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:40:56,163 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:40:58,440 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:41:00,697 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:41:28,454 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:41:30,758 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:41:33,073 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:41:33,074 - basicLogger - DEBUG - detail
+2023-10-19 10:41:33,074 - basicLogger - DEBUG - status
+2023-10-19 10:41:33,074 - basicLogger - DEBUG - title
+2023-10-19 10:41:33,074 - basicLogger - DEBUG - type
+2023-10-19 10:41:33,074 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:41:28Z 
+2023-10-19 10:41:33,075 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:41:33,451 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:41:35,762 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:41:38,076 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:41:38,076 - basicLogger - DEBUG - detail
+2023-10-19 10:41:38,077 - basicLogger - DEBUG - status
+2023-10-19 10:41:38,077 - basicLogger - DEBUG - title
+2023-10-19 10:41:38,077 - basicLogger - DEBUG - type
+2023-10-19 10:41:38,077 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:41:33Z 
+2023-10-19 10:41:38,078 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:41:38,456 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:41:40,805 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:41:43,151 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:41:43,151 - basicLogger - DEBUG - detail
+2023-10-19 10:41:43,151 - basicLogger - DEBUG - status
+2023-10-19 10:41:43,151 - basicLogger - DEBUG - title
+2023-10-19 10:41:43,152 - basicLogger - DEBUG - type
+2023-10-19 10:41:43,152 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:41:38Z 
+2023-10-19 10:41:43,152 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:41:43,456 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:41:45,782 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:41:48,091 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:41:48,091 - basicLogger - DEBUG - detail
+2023-10-19 10:41:48,091 - basicLogger - DEBUG - status
+2023-10-19 10:41:48,091 - basicLogger - DEBUG - title
+2023-10-19 10:41:48,092 - basicLogger - DEBUG - type
+2023-10-19 10:41:48,092 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:41:43Z 
+2023-10-19 10:41:48,092 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:41:48,450 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:41:50,709 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:41:52,963 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:41:52,963 - basicLogger - DEBUG - detail
+2023-10-19 10:41:52,963 - basicLogger - DEBUG - status
+2023-10-19 10:41:52,963 - basicLogger - DEBUG - title
+2023-10-19 10:41:52,963 - basicLogger - DEBUG - type
+2023-10-19 10:41:52,964 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:41:48Z 
+2023-10-19 10:41:52,964 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:41:53,448 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:41:55,753 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:41:58,092 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:41:58,093 - basicLogger - DEBUG - detail
+2023-10-19 10:41:58,093 - basicLogger - DEBUG - status
+2023-10-19 10:41:58,093 - basicLogger - DEBUG - title
+2023-10-19 10:41:58,093 - basicLogger - DEBUG - type
+2023-10-19 10:41:58,094 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:41:53Z 
+2023-10-19 10:41:58,094 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:41:58,449 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:42:00,717 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:42:03,032 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:42:03,032 - basicLogger - DEBUG - detail
+2023-10-19 10:42:03,033 - basicLogger - DEBUG - status
+2023-10-19 10:42:03,033 - basicLogger - DEBUG - title
+2023-10-19 10:42:03,033 - basicLogger - DEBUG - type
+2023-10-19 10:42:03,034 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:41:58Z 
+2023-10-19 10:42:03,035 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:43:48,081 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:43:50,413 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:43:52,673 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:43:52,673 - basicLogger - DEBUG - detail
+2023-10-19 10:43:52,673 - basicLogger - DEBUG - status
+2023-10-19 10:43:52,673 - basicLogger - DEBUG - title
+2023-10-19 10:43:52,674 - basicLogger - DEBUG - type
+2023-10-19 10:43:52,674 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:43:48Z 
+2023-10-19 10:43:52,675 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:43:53,076 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:43:55,349 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:43:57,825 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:43:57,825 - basicLogger - DEBUG - detail
+2023-10-19 10:43:57,825 - basicLogger - DEBUG - status
+2023-10-19 10:43:57,825 - basicLogger - DEBUG - title
+2023-10-19 10:43:57,826 - basicLogger - DEBUG - type
+2023-10-19 10:43:57,826 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:43:53Z 
+2023-10-19 10:43:57,827 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:43:58,080 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:00,494 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:44:02,812 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:44:02,812 - basicLogger - DEBUG - detail
+2023-10-19 10:44:02,812 - basicLogger - DEBUG - status
+2023-10-19 10:44:02,813 - basicLogger - DEBUG - title
+2023-10-19 10:44:02,813 - basicLogger - DEBUG - type
+2023-10-19 10:44:02,813 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:43:58Z 
+2023-10-19 10:44:02,814 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:44:03,074 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:05,403 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:44:07,757 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:44:07,757 - basicLogger - DEBUG - detail
+2023-10-19 10:44:07,758 - basicLogger - DEBUG - status
+2023-10-19 10:44:07,758 - basicLogger - DEBUG - title
+2023-10-19 10:44:07,758 - basicLogger - DEBUG - type
+2023-10-19 10:44:07,759 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:44:03Z 
+2023-10-19 10:44:07,759 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:44:08,080 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:10,336 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:44:12,639 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:44:12,641 - basicLogger - DEBUG - detail
+2023-10-19 10:44:12,641 - basicLogger - DEBUG - status
+2023-10-19 10:44:12,641 - basicLogger - DEBUG - title
+2023-10-19 10:44:12,641 - basicLogger - DEBUG - type
+2023-10-19 10:44:12,642 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:44:08Z 
+2023-10-19 10:44:12,643 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:44:13,075 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:15,365 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:44:17,616 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:44:17,617 - basicLogger - DEBUG - detail
+2023-10-19 10:44:17,617 - basicLogger - DEBUG - status
+2023-10-19 10:44:17,617 - basicLogger - DEBUG - title
+2023-10-19 10:44:17,617 - basicLogger - DEBUG - type
+2023-10-19 10:44:17,618 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:44:13Z 
+2023-10-19 10:44:17,619 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:44:18,066 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:20,335 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:44:22,603 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:44:22,604 - basicLogger - DEBUG - detail
+2023-10-19 10:44:22,604 - basicLogger - DEBUG - status
+2023-10-19 10:44:22,604 - basicLogger - DEBUG - title
+2023-10-19 10:44:22,605 - basicLogger - DEBUG - type
+2023-10-19 10:44:22,606 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:44:18Z 
+2023-10-19 10:44:22,608 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:44:23,074 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:25,341 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:44:27,657 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:44:27,657 - basicLogger - DEBUG - detail
+2023-10-19 10:44:27,657 - basicLogger - DEBUG - status
+2023-10-19 10:44:27,657 - basicLogger - DEBUG - title
+2023-10-19 10:44:27,658 - basicLogger - DEBUG - type
+2023-10-19 10:44:27,658 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:44:23Z 
+2023-10-19 10:44:27,659 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:44:28,068 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:30,362 - basicLogger - ERROR - Error: Status Recieved from Storage (/employee) was not 200
+2023-10-19 10:44:32,922 - basicLogger - ERROR - Error: Status Recieved from Storage (/requestleave) was not 200
+2023-10-19 10:44:32,923 - basicLogger - DEBUG - detail
+2023-10-19 10:44:32,923 - basicLogger - DEBUG - status
+2023-10-19 10:44:32,923 - basicLogger - DEBUG - title
+2023-10-19 10:44:32,923 - basicLogger - DEBUG - type
+2023-10-19 10:44:32,924 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 4
+	Number of new request leave entries: 4
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:44:28Z 
+2023-10-19 10:44:32,924 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:44:33,079 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:38,073 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:43,077 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:48,081 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:53,067 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:44:58,079 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:45:03,079 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:45:08,079 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:45:13,071 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:45:18,079 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:45:23,078 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:45:28,066 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:45:33,075 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:46:02,934 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:46:06,298 - basicLogger - INFO - Status code 200 recieved by /employee: Retrieved 1 entries
+2023-10-19 10:46:08,543 - basicLogger - INFO - Status code 200 recieved by /requestleave: Retrieved 1 entries
+2023-10-19 10:46:08,544 - basicLogger - DEBUG - {'date_created': '2023-10-19T17:08:40Z', 'days_off': 30, 'employee_id': '550e8400-e29b-41d4-a716-446655440000', 'end_date': '2023-08-17', 'hours_off': 150, 'id': 989, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '979b44e3-f5b8-470e-ac07-d002754f6d86'}
+2023-10-19 10:46:08,545 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 1
+	Number of new request leave entries: 1
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:46:02Z 
+2023-10-19 10:46:08,546 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:46:12,925 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:46:15,176 - basicLogger - INFO - Status code 200 recieved by /employee: Retrieved 1 entries
+2023-10-19 10:46:17,421 - basicLogger - INFO - Status code 200 recieved by /requestleave: Retrieved 1 entries
+2023-10-19 10:46:17,422 - basicLogger - DEBUG - {'date_created': '2023-10-19T17:08:40Z', 'days_off': 30, 'employee_id': '550e8400-e29b-41d4-a716-446655440000', 'end_date': '2023-08-17', 'hours_off': 150, 'id': 989, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '979b44e3-f5b8-470e-ac07-d002754f6d86'}
+2023-10-19 10:46:17,422 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 1
+	Number of new request leave entries: 1
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:46:12Z 
+2023-10-19 10:46:17,423 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:46:17,933 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:46:20,180 - basicLogger - INFO - Status code 200 recieved by /employee: Retrieved 1 entries
+2023-10-19 10:46:22,434 - basicLogger - INFO - Status code 200 recieved by /requestleave: Retrieved 1 entries
+2023-10-19 10:46:22,435 - basicLogger - DEBUG - {'date_created': '2023-10-19T17:08:40Z', 'days_off': 30, 'employee_id': '550e8400-e29b-41d4-a716-446655440000', 'end_date': '2023-08-17', 'hours_off': 150, 'id': 989, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '979b44e3-f5b8-470e-ac07-d002754f6d86'}
+2023-10-19 10:46:22,437 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 1
+	Number of new request leave entries: 1
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:46:17Z 
+2023-10-19 10:46:22,439 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:46:22,938 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:46:25,218 - basicLogger - INFO - Status code 200 recieved by /employee: Retrieved 1 entries
+2023-10-19 10:46:27,467 - basicLogger - INFO - Status code 200 recieved by /requestleave: Retrieved 1 entries
+2023-10-19 10:46:27,468 - basicLogger - DEBUG - {'date_created': '2023-10-19T17:08:40Z', 'days_off': 30, 'employee_id': '550e8400-e29b-41d4-a716-446655440000', 'end_date': '2023-08-17', 'hours_off': 150, 'id': 989, 'reason': 'Vacation', 'start_date': '2023-07-17', 'trace_id': '979b44e3-f5b8-470e-ac07-d002754f6d86'}
+2023-10-19 10:46:27,470 - basicLogger - DEBUG - 
+Updated Statistics: 
+	Number of new employee entries: 1
+	Number of new request leave entries: 1
+	Max number off days off:0
+	Max number of hours off: 0
+	Last Updated: 2023-10-19T10:46:22Z 
+2023-10-19 10:46:27,471 - basicLogger - INFO - Period Processing has ended
+2023-10-19 10:46:27,937 - basicLogger - INFO - Start Periodic Processing
+2023-10-19 10:46:30,202 - basicLogger - INFO - Status code 200 recieved by /employee: Retrieved 1 entries

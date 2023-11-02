@@ -1,7 +1,7 @@
 {
-    "num_req_off_readings": 0,
-    "num_employee_readings": 0,
+    "num_req_off_readings": 1,
+    "num_employee_readings": 1,
     "max_days_off": 0,
     "max_hours_off": 0,
-    "last_updated": "2023-10-13T10:32:32Z"
+    "last_updated": "2023-10-19T10:46:22Z"
 }

@@ -1,9 +1,8 @@
 version: 1
 datastore:
   user: root
-
   # LEFT BLANK
-  password: ${MYSQL_PASS}
+  password: Password
   hostname: acit-3855-kakfa-jwang.eastus.cloudapp.azure.com
   port: 3306
   db: events

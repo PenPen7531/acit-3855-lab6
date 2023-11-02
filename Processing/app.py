@@ -10,6 +10,7 @@ import logging
 import logging.config
 from apscheduler.schedulers.background import BackgroundScheduler
 import uuid
+from flask_cors import CORS, cross_origin
 
 PORT = 8100
 
@@ -94,10 +95,9 @@ def populate_stats():
     
     # Loop through all entries
     for dict in content:
-        
-        # Get the maximum number of days off 
-        if int(dict['days_off']) > int(max_days):
-            max_days = int(dict['days_off'])
+        logger.debug(dict)
+        if dict['days_off'] > max_days:
+            max_days = dict['days_off']
 
         # Get the maximum number of hours off
         if int(dict['hours_off']) > int(max_hours):
@@ -106,8 +106,8 @@ def populate_stats():
     # Update dictionary
     data['max_days_off'] = max_days
     data['max_hours_off'] = max_hours
-    data['num_req_off_readings'] = len(json.loads(timeoff_response.content))
-    data['num_employee_readings'] = len(json.loads(employee_response.content))
+    data['num_req_off_readings'] += len(json.loads(timeoff_response.content))
+    data['num_employee_readings'] += len(json.loads(employee_response.content))
     data['last_updated']=formatted_date
 
 
@@ -153,7 +153,11 @@ app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 if __name__ == "__main__":
     # Starts logger
     init_scheduler()
+    app = connexion.FlaskApp(__name__, specification_dir='')
+    CORS(app.app)
+    app.app.config['CORS_HEADERS'] = 'Content-Type'
     app.run(port=PORT, debug = True, use_reloader=False)
+    
 
     
     
