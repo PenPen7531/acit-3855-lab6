@@ -156,7 +156,7 @@ if __name__ == "__main__":
     app = connexion.FlaskApp(__name__, specification_dir='')
     CORS(app.app)
     app.app.config['CORS_HEADERS'] = 'Content-Type'
-    app.run(port=PORT, use_reloader=False)
+    app.run(port=PORT, use_reloader=False, host="0.0.0.0")
     
 
     
