@@ -103,8 +103,8 @@ def process_messages():
     # read all the old messages from the history in the message queue).
     consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST)
 
+
     
-    # topics = consumer.topics()
         #     if not topics: 
         #         raise RuntimeError()
         #     else:
