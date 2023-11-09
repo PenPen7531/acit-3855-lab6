@@ -10,7 +10,8 @@ import logging
 import logging.config
 from pykafka import KafkaClient
 import uuid
-
+import time
+from pykafka.exceptions import SocketDisconnectedError, LeaderNotAvailable
 # File and Event Constants
 EVENT_FILE = 'events.json'
 MAX_EVENTS = 10
@@ -61,8 +62,11 @@ def request_time(body):
     body['trace_id'] = str(u_id)
     
     logger.info(f"Received Event: Trace ID {body['trace_id']}")
-    client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
-    topic = client.topics[str.encode(app_config['events']['topic'])]
+   
+
+
+
+
     producer = topic.get_sync_producer()
     msg = { "type": "time",
     "datetime" :
@@ -85,8 +89,7 @@ def add_employee(body):
     logger.info(f"Received Event: Trace ID {body['trace_id']}")
     # Sends a post request to the storage/DB program that will save the entries into a DB
     # Specifies the localhost (Can be changed when put into multiple different VMs, content type: json, and the json data sent will be the argument data)
-    client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
-    topic = client.topics[str.encode(app_config['events']['topic'])]
+    
     producer = topic.get_sync_producer()
     msg = {     
         "type": "employee",
@@ -102,8 +105,28 @@ def add_employee(body):
     # Returns NoContent with the response code from the DB server
     return NoContent, 201
 
+def connect_kafka():
+    "Initializes connection to kafka as a producer"
+    try_count = 0 
+    
+    while try_count <= app_config['kafka']['retries']:
+        time.sleep(app_config['kafka']['sleep'])
+        logging.info(f"Connecting to Kafka. Try #: {try_count}")
+        try:
+            client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
+            topic = client.topics[str.encode(app_config['events']['topic'])]
+            logger.info("Connection Successful")
+            # Break loop after connection successful
+            break
+        except (LeaderNotAvailable, SocketDisconnectedError):
+            logging.error(f"Connection Failed. Retrying in {app_config['kafka']['sleep']} seconds")
+            time.sleep(app_config['kakfa']['sleep'])
+        try_count += 1
+    return topic
 
 
+
+topic = connect_kafka()
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 
@@ -112,6 +135,7 @@ app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 
 # Runs on Port 8080
 if __name__ == "__main__":
-    app.run(port=PORT, debug = True)
+    
+    app.run(port=PORT)
     
     

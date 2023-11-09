@@ -1,0 +1,63 @@
+2023-11-09 09:52:04,669 - basicLogger - INFO - Connection Successful
+2023-11-09 09:52:20,965 - basicLogger - INFO - Connection Successful
+2023-11-09 09:53:12,763 - basicLogger - INFO - Connection Successful
+2023-11-09 09:53:37,135 - basicLogger - INFO - Connection Successful
+2023-11-09 09:53:38,564 - basicLogger - INFO - Connection Successful
+2023-11-09 09:53:40,696 - basicLogger - INFO - Connection Successful
+2023-11-09 09:53:42,152 - basicLogger - INFO - Connection Successful
+2023-11-09 09:54:21,304 - basicLogger - INFO - Connection Successful
+2023-11-09 09:54:22,764 - basicLogger - INFO - Connection Successful
+2023-11-09 09:55:13,496 - basicLogger - INFO - Received event Add Employee request with a trace id of 22f576d9-443b-4f16-959f-af94a1e909b5
+2023-11-09 09:55:13,497 - basicLogger - INFO - Received Event: Trace ID 22f576d9-443b-4f16-959f-af94a1e909b5
+2023-11-09 09:55:14,912 - basicLogger - INFO - Connection Successful
+2023-11-09 09:55:14,984 - basicLogger - INFO - Sent Event: Trace ID 22f576d9-443b-4f16-959f-af94a1e909b5
+2023-11-09 09:59:21,993 - basicLogger - INFO - Connection Successful
+2023-11-09 09:59:26,511 - basicLogger - INFO - Received event Add Employee request with a trace id of fdcf6b0f-80d8-4ea3-bca6-18fab792011b
+2023-11-09 09:59:26,511 - basicLogger - INFO - Received Event: Trace ID fdcf6b0f-80d8-4ea3-bca6-18fab792011b
+2023-11-09 09:59:57,190 - basicLogger - INFO - Connection Successful
+2023-11-09 10:00:02,575 - basicLogger - INFO - Connection Successful
+2023-11-09 10:00:21,029 - basicLogger - INFO - Received event Add Employee request with a trace id of 9b9637c7-0a19-4bb6-b8e2-b2a797bf9c91
+2023-11-09 10:00:21,030 - basicLogger - INFO - Received Event: Trace ID 9b9637c7-0a19-4bb6-b8e2-b2a797bf9c91
+2023-11-09 10:00:21,113 - basicLogger - INFO - Sent Event: Trace ID 9b9637c7-0a19-4bb6-b8e2-b2a797bf9c91
+2023-11-09 10:00:55,944 - basicLogger - INFO - Connection Successful
+2023-11-09 10:01:01,313 - basicLogger - INFO - Connection Successful
+2023-11-09 10:01:20,841 - basicLogger - INFO - Connection Successful
+2023-11-09 10:01:39,183 - basicLogger - INFO - Connection Successful
+2023-11-09 10:01:41,940 - basicLogger - INFO - Received event Add Employee request with a trace id of bd464d15-bbb4-4aec-94be-25479b3723d9
+2023-11-09 10:01:41,940 - basicLogger - INFO - Received Event: Trace ID bd464d15-bbb4-4aec-94be-25479b3723d9
+2023-11-09 10:05:55,873 - basicLogger - INFO - Connection Successful
+2023-11-09 10:06:08,700 - basicLogger - INFO - Received event Add Employee request with a trace id of f134f5fb-e303-460f-aa27-f998e7616090
+2023-11-09 10:06:08,701 - basicLogger - INFO - Received Event: Trace ID f134f5fb-e303-460f-aa27-f998e7616090
+2023-11-09 10:06:22,766 - basicLogger - INFO - Connection Successful
+2023-11-09 10:06:28,205 - basicLogger - INFO - Connection Successful
+2023-11-09 10:06:36,215 - basicLogger - INFO - Received event Add Employee request with a trace id of cc7caab4-51cf-4b3b-b3bd-394dd51cf0d5
+2023-11-09 10:06:36,216 - basicLogger - INFO - Received Event: Trace ID cc7caab4-51cf-4b3b-b3bd-394dd51cf0d5
+2023-11-09 10:06:36,286 - basicLogger - INFO - Sent Event: Trace ID cc7caab4-51cf-4b3b-b3bd-394dd51cf0d5
+2023-11-09 10:08:53,750 - basicLogger - INFO - Received event Add Employee request with a trace id of b21f09d3-8355-44a9-a51c-24a1f5cf1479
+2023-11-09 10:08:53,750 - basicLogger - INFO - Received Event: Trace ID b21f09d3-8355-44a9-a51c-24a1f5cf1479
+2023-11-09 10:08:53,825 - basicLogger - INFO - Sent Event: Trace ID b21f09d3-8355-44a9-a51c-24a1f5cf1479
+2023-11-09 10:09:06,129 - basicLogger - INFO - Received event Add Employee request with a trace id of 074b3447-3c42-40b1-92dc-9febb6431c9e
+2023-11-09 10:09:06,130 - basicLogger - INFO - Received Event: Trace ID 074b3447-3c42-40b1-92dc-9febb6431c9e
+2023-11-09 10:09:06,200 - basicLogger - INFO - Sent Event: Trace ID 074b3447-3c42-40b1-92dc-9febb6431c9e
+2023-11-09 10:09:28,611 - basicLogger - INFO - Received event Add Employee request with a trace id of 0dd235b7-9890-4b07-a2f6-0a22a7e4d3b8
+2023-11-09 10:09:28,612 - basicLogger - INFO - Received Event: Trace ID 0dd235b7-9890-4b07-a2f6-0a22a7e4d3b8
+2023-11-09 10:09:28,683 - basicLogger - INFO - Sent Event: Trace ID 0dd235b7-9890-4b07-a2f6-0a22a7e4d3b8
+2023-11-09 10:10:36,605 - basicLogger - INFO - Received event Add Employee request with a trace id of 37c761f3-82f2-4f65-b540-547589925720
+2023-11-09 10:10:36,606 - basicLogger - INFO - Received Event: Trace ID 37c761f3-82f2-4f65-b540-547589925720
+2023-11-09 10:10:36,676 - basicLogger - INFO - Sent Event: Trace ID 37c761f3-82f2-4f65-b540-547589925720
+2023-11-09 10:11:48,727 - basicLogger - INFO - Connection Successful
+2023-11-09 10:11:54,092 - basicLogger - INFO - Connection Successful
+2023-11-09 10:12:30,262 - basicLogger - INFO - Received event Add Employee request with a trace id of b176fca1-d8ee-4212-8719-a041b1da2667
+2023-11-09 10:12:30,263 - basicLogger - INFO - Received Event: Trace ID b176fca1-d8ee-4212-8719-a041b1da2667
+2023-11-09 10:12:30,333 - basicLogger - INFO - Sent Event: Trace ID b176fca1-d8ee-4212-8719-a041b1da2667
+2023-11-09 10:13:47,163 - basicLogger - INFO - Received event Add Employee request with a trace id of f23766f5-b8d1-4d64-b553-b80c2294e5f8
+2023-11-09 10:13:47,164 - basicLogger - INFO - Received Event: Trace ID f23766f5-b8d1-4d64-b553-b80c2294e5f8
+2023-11-09 10:13:47,234 - basicLogger - INFO - Sent Event: Trace ID f23766f5-b8d1-4d64-b553-b80c2294e5f8
+2023-11-09 10:14:23,409 - basicLogger - INFO - Connection Successful
+2023-11-09 10:14:28,819 - basicLogger - INFO - Connection Successful
+2023-11-09 10:14:34,920 - basicLogger - INFO - Received event Add Employee request with a trace id of d7047727-5227-4ab9-8d49-498ac68a4942
+2023-11-09 10:14:34,920 - basicLogger - INFO - Received Event: Trace ID d7047727-5227-4ab9-8d49-498ac68a4942
+2023-11-09 10:14:34,993 - basicLogger - INFO - Sent Event: Trace ID d7047727-5227-4ab9-8d49-498ac68a4942
+2023-11-09 10:14:47,347 - basicLogger - INFO - Received event Add Employee request with a trace id of 083f796f-c249-46f2-8e32-d973b5a1abb6
+2023-11-09 10:14:47,347 - basicLogger - INFO - Received Event: Trace ID 083f796f-c249-46f2-8e32-d973b5a1abb6
+2023-11-09 10:14:47,419 - basicLogger - INFO - Sent Event: Trace ID 083f796f-c249-46f2-8e32-d973b5a1abb6
