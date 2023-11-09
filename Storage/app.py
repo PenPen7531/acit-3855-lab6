@@ -1,6 +1,6 @@
 # Jeffrey Wang
 # Lab 3 - Storage file
-from pykafka.exceptions import SocketDisconnectedError, LeaderNotAvailable
+
 import connexion
 from connexion import NoContent
 from base import Base
@@ -19,7 +19,6 @@ from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from threading import Thread
 from sqlalchemy import and_
-import time
 
 
 
@@ -91,28 +90,13 @@ def get_requests(start_timestamp, end_timestamp):
 def process_messages():
     """ Process event messages """
     hostname = "%s:%d" % (app_config["events"]["hostname"],app_config["events"]["port"])
-    try_count = 0
-    # time.sleep(10)
-    while try_count <= app_config['kafka']['retries']:
-        logging.info(f"Trying to connect to kafka. Connection Try: {try_count}")
-        
-        try: 
-            client = KafkaClient(hosts=hostname)
-            topic = client.topics[str.encode(app_config["events"]["topic"])]
-            consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False, auto_offset_reset=OffsetType.LATEST) 
+    client = KafkaClient(hosts=hostname)
+    topic = client.topics[str.encode(app_config["events"]["topic"])]
 
-            
-            
-        except:
-            logging.error(f"Failed to connect to Kafka. Sleeping for {app_config['kafka']['sleep']} seconds")
-        time.sleep(app_config["kafka"]['sleep'])
-        try_count += 1
-            
-            
     # Create a consume on a consumer group, that only reads new messages
     # (uncommitted messages) when the service re-starts (i.e., it doesn't
     # read all the old messages from the history in the message queue).
-    
+    consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST)
     
     trace_ids = []
     
@@ -187,9 +171,7 @@ app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 
 
 if __name__ == "__main__":
-    
     t1=Thread(target=process_messages)
     t1.setDaemon(True)
     t1.start()
     app.run(port=PORT)
-    
