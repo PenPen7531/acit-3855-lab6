@@ -82,7 +82,7 @@ def get_requests(start_timestamp, end_timestamp):
         results_list.append(reading.to_dict())
     session.close()
 
-    logger.info("Query for Time off requests after %s returns %d results" %(timestamp, len(results_list)))
+    logger.info("Query for Time off requests after %s returns %d results" %(start_timestamp, len(results_list)))
     return results_list, 200
 
 
