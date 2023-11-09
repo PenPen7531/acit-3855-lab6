@@ -105,7 +105,7 @@ def process_messages():
             try:
                 consumer.consume()
             except:
-                logging.error("Cannot Consume")
+                logging.info("Cannot Consume")
 
         except (SocketDisconnectedError) as error:
             logging.error(error)
