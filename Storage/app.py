@@ -90,13 +90,13 @@ def get_requests(start_timestamp, end_timestamp):
 
 def process_messages():
     """ Process event messages """
-    time.sleep(5)
+    time.sleep(10)
     hostname = "%s:%d" % (app_config["events"]["hostname"],app_config["events"]["port"])
     try_count = 0 
     while try_count <= app_config['kafka']['retries']:
         logging.info(f"Connecting to Kafka. Try #: {try_count}")
         try:
-            client = KafkaClient(hosts=hostname, socket_timeout_ms=1000, offsets_channel_socket_timeout_ms=1000)
+            client = KafkaClient(hosts=hostname, socket_timeout_ms=5000, offsets_channel_socket_timeout_ms=5000)
             topic = client.topics[str.encode(app_config["events"]["topic"])]
 
             # Create a consume on a consumer group, that only reads new messages
