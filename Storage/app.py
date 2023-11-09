@@ -105,6 +105,7 @@ def process_messages():
             try:
                 consumer.consume()
                 logger.info("Connection Successful")
+                break
             except:
                 logging.info("Cannot Consume")
 
