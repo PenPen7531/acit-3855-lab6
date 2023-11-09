@@ -18,7 +18,7 @@ import json
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from threading import Thread
-
+from sqlalchemy import and_
 
 
 
@@ -52,30 +52,31 @@ def log_data(event_name, table, trace_id):
 
 
 
-def get_employees(timestamp):
+def get_employees(start_timestamp, end_timestamp):
     "Gets employees from a specific timestamp"
 
 
 
     session = DB_SESSION()
-    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
-    readings = session.query(Employee).filter(Employee.date_created >= timestamp_datetime)
+    start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    readings = session.query(Employee).filter(and_(Employee.date_created >= start_timestamp_datetime, Employee.date_created < end_timestamp_datetime))
     results_list = []
     for reading in readings:
         results_list.append(reading.to_dict())
     session.close()
 
-    logger.info("Query for Employees readings after %s returns %d results" %(timestamp, len(results_list)))
+    logger.info("Query for Employees readings after %s returns %d results" %(start_timestamp, len(results_list)))
     return results_list, 200
 
     
 
-def get_requests(timestamp):
+def get_requests(start_timestamp, end_timestamp):
     "Gets time off reqeusts from a specific timestamp"
     session = DB_SESSION()
-    timestamp_datetime = datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ")
-
-    readings = session.query(RequestLeave).filter(RequestLeave.date_created >= timestamp_datetime)
+    start_timestamp_datetime = datetime.datetime.strptime(start_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    end_timestamp_datetime = datetime.datetime.strptime(end_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    readings = session.query(RequestLeave).filter(and_(RequestLeave.date_created >= start_timestamp_datetime, RequestLeave.date_created < end_timestamp_datetime))
     results_list = []
     for reading in readings:
         results_list.append(reading.to_dict())

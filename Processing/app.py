@@ -66,7 +66,7 @@ def populate_stats():
     formatted_date = current_date.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # Query employee endpoint
-    employee_response = requests.get(f"{app_config['eventstore']['url']}/employee?timestamp={data['last_updated']}")
+    employee_response = requests.get(f"{app_config['eventstore']['url']}/employee?start_timestamp={data['last_updated']}&end_timestamp={formatted_date}")
     
     # Log success or fail status code depending on response
     if employee_response.status_code == 200:
@@ -77,7 +77,8 @@ def populate_stats():
 
 
     # Query timeoff endpoint
-    timeoff_response = requests.get(f"{app_config['eventstore']['url']}/requestleave?timestamp={data['last_updated']}")
+    timeoff_response = requests.get(f"{app_config['eventstore']['url']}/requestleave?start_timestamp={data['last_updated']}&end_timestamp={formatted_date}")
+
 
     # Log success or fail status code depdning on reponse
     if timeoff_response.status_code == 200:
