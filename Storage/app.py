@@ -91,28 +91,25 @@ def get_requests(start_timestamp, end_timestamp):
 def process_messages():
     """ Process event messages """
     hostname = "%s:%d" % (app_config["events"]["hostname"],app_config["events"]["port"])
-    # try_count = 0 
-    # while try_count <= app_config['kafka']['retries']:
-    #     logging.info(f"Connecting to Kafka. Try #: {try_count}")
-    #     try:
-    client = KafkaClient(hosts=hostname)
-    topic = client.topics[str.encode(app_config["events"]["topic"])]
+    try_count = 0 
+    while try_count <= app_config['kafka']['retries']:
+        logging.info(f"Connecting to Kafka. Try #: {try_count}")
+        try:
+            client = KafkaClient(hosts=hostname)
+            topic = client.topics[str.encode(app_config["events"]["topic"])]
 
-    # Create a consume on a consumer group, that only reads new messages
-    # (uncommitted messages) when the service re-starts (i.e., it doesn't
-    # read all the old messages from the history in the message queue).
-    consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST)
+            # Create a consume on a consumer group, that only reads new messages
+            # (uncommitted messages) when the service re-starts (i.e., it doesn't
+            # read all the old messages from the history in the message queue).
+            consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST)
 
 
-    
-        #     if not topics: 
-        #         raise RuntimeError()
-        #     else:
-        #         logging.info("Connection Successful")
-        # except:
-        #     logging.error(f"Connection Failed. Retrying in {app_config['kafka']['sleep']} seconds")
-        #     time.sleep(app_config['kafka']['sleep'])
-        # try_count += 1
+
+        except (SocketDisconnectedError) as error:
+            logging.error(error)
+            logging.error(f"Connection Failed. Retrying in {app_config['kafka']['sleep']} seconds")
+            time.sleep(app_config['kafka']['sleep'])
+        try_count += 1
     trace_ids = []
     
     # This is blocking - it will wait for a new message
