@@ -90,6 +90,7 @@ def get_requests(start_timestamp, end_timestamp):
 
 def process_messages():
     """ Process event messages """
+    time.sleep(5)
     hostname = "%s:%d" % (app_config["events"]["hostname"],app_config["events"]["port"])
     try_count = 0 
     while try_count <= app_config['kafka']['retries']:
