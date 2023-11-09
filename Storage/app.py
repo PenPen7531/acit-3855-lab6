@@ -104,12 +104,13 @@ def process_messages():
             consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST)
             try:
                 consumer.consume()
+                logger.info("Connection Successful")
             except:
                 logging.info("Cannot Consume")
 
         except (SocketDisconnectedError) as error:
             logging.error(error)
-            logging.error(f"Connection Failed. Retrying in {app_config['kafka']['sleep']} seconds")
+            logging.info(f"Connection Failed. Retrying in {app_config['kafka']['sleep']} seconds")
             time.sleep(app_config['kafka']['sleep'])
         try_count += 1
     trace_ids = []
