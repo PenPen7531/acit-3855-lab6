@@ -96,19 +96,18 @@ def process_messages():
     while try_count <= app_config['kafka']['retries']:
         logging.info(f"Connecting to Kafka. Try #: {try_count}")
         try:
-            client = KafkaClient(hosts=hostname, socket_timeout_ms=5000, offsets_channel_socket_timeout_ms=5000)
+            client = KafkaClient(hosts=hostname, socket_timeout_ms=1000, offsets_channel_socket_timeout_ms=1000)
             topic = client.topics[str.encode(app_config["events"]["topic"])]
 
             # Create a consume on a consumer group, that only reads new messages
             # (uncommitted messages) when the service re-starts (i.e., it doesn't
             # read all the old messages from the history in the message queue).
             consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST)
-            try:
-                consumer.consume()
-                logger.info("Connection Successful")
-                break
-            except:
-                logging.info("Cannot Consume")
+            
+            consumer.consume()
+            logger.info("Connection Successful")
+            break
+
 
         except (SocketDisconnectedError) as error:
             logging.error(error)
