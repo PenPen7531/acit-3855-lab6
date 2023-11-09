@@ -1,5 +1,5 @@
 ---
-openapi: 3.1.0
+openapi: 3.0.0
 info:
   title: Employee management RESTful API
   description: "Employee management system that tracks employees within a company. They will be able to add, delete, and modify employees. They will also be able to use thie API to request and submit leave for their employees."
