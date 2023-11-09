@@ -90,10 +90,12 @@ def get_requests(start_timestamp, end_timestamp):
 
 def process_messages():
     """ Process event messages """
-    time.sleep(10)
+    
     hostname = "%s:%d" % (app_config["events"]["hostname"],app_config["events"]["port"])
     try_count = 0 
+    logging.info(f"Connecting to Kafka in {app_config['kafka']['sleep']} seconds")
     while try_count <= app_config['kafka']['retries']:
+        time.sleep(app_config['kafka']['sleep'])
         logging.info(f"Connecting to Kafka. Try #: {try_count}")
         try:
             client = KafkaClient(hosts=hostname, socket_timeout_ms=5000, offsets_channel_socket_timeout_ms=5000)
@@ -108,9 +110,8 @@ def process_messages():
 
 
         except (SocketDisconnectedError) as error:
-            logging.error(error)
-            logging.info(f"Connection Failed. Retrying in {app_config['kafka']['sleep']} seconds")
-            time.sleep(app_config['kafka']['sleep'])
+            logging.error(f"Connection Failed. Retrying in {app_config['kafka']['sleep']} seconds")
+            
         try_count += 1
     trace_ids = []
     
