@@ -67,7 +67,7 @@ def request_time(body):
 
 
 
-    producer = topic.get_sync_producer()
+ 
     msg = { "type": "time",
     "datetime" :
     datetime.datetime.now().strftime(
@@ -90,7 +90,7 @@ def add_employee(body):
     # Sends a post request to the storage/DB program that will save the entries into a DB
     # Specifies the localhost (Can be changed when put into multiple different VMs, content type: json, and the json data sent will be the argument data)
     
-    producer = topic.get_sync_producer()
+    
     msg = {     
         "type": "employee",
         "datetime" : datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
@@ -115,21 +115,23 @@ def connect_kafka():
         try:
             client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
             topic = client.topics[str.encode(app_config['events']['topic'])]
+            producer = topic.get_sync_producer()
             logger.info("Connection Successful")
+
             # Break loop after connection successful
             break
         except (LeaderNotAvailable, SocketDisconnectedError):
             logging.error(f"Connection Failed. Retrying in {app_config['kafka']['sleep']} seconds")
             time.sleep(app_config['kakfa']['sleep'])
         try_count += 1
-    return topic
+    return producer
 
 
 
-topic = connect_kafka()
+
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
-
+producer = connect_kafka()
 
 
 
