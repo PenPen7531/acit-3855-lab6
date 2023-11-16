@@ -53,7 +53,7 @@ export default function EndpointAudit() {
 						
 					</tbody>
                 </table>
-                <h3>Last Updated: {stats['last_updated']}</h3>
+                <h3>Last Updated: {log['last_updated']}</h3>
 
             </div>
         )
