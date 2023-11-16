@@ -1,7 +1,7 @@
 services:
-  # audit: http://localhost:8110
-  processing: http://localhost:8100
-  receiver: http://localhost:8080
-  storage: http://localhost:8090
+  audit: http://localhost:8110/health
+  processing: http://localhost:8100/health
+  receiver: http://localhost:8080/health
+  storage: http://localhost:8090/health
   
 port: 8120
