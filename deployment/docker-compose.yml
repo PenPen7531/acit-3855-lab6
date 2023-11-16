@@ -81,7 +81,7 @@ services:
     depends_on:
       - storage
     environment:
-      - TARGET_ENV = test
+      - TARGET_ENV=test
     volumes:
       - /home/azureuser/config/storage:/config
   audit:
@@ -95,7 +95,7 @@ services:
     ports:
     - 3000:3000
     environment:
-      - TARGET_ENV = test
+      - TARGET_ENV=test
     volumes:
       - /home/azureuser/config/audit_log:/config
     depends_on:
