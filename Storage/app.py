@@ -30,9 +30,7 @@ PORT = 8090
 
 
 
-DB_ENGINE = create_engine(f"mysql+pymysql://{app_config['datastore']['user']}:{app_config['datastore']['password']}@{app_config['datastore']['hostname']}:{app_config['datastore']['port']}/{app_config['datastore']['db']}")
-Base.metadata.bind = DB_ENGINE
-DB_SESSION = sessionmaker(bind=DB_ENGINE)
+
 
 
 
@@ -61,6 +59,10 @@ logger = logging.getLogger('basicLogger')
 logger.info(f"App Conf File: {app_conf_file}")
 logger.info(f"Logging Conf File: {app_conf_file}")
 
+
+DB_ENGINE = create_engine(f"mysql+pymysql://{app_config['datastore']['user']}:{app_config['datastore']['password']}@{app_config['datastore']['hostname']}:{app_config['datastore']['port']}/{app_config['datastore']['db']}")
+Base.metadata.bind = DB_ENGINE
+DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 def log_data(event_name, table, trace_id):
     logger.debug(f"Stored event {event_name} request in {table} table with a trace id of {trace_id}")
