@@ -41,22 +41,27 @@ def get_health():
     "Checks the status of all services"
 
     try:
-        audit_response = requests.get(app_config["services"]["audit"], timeout=5)
+        audit_response = requests.get(app_config["services"]["audit"], timeout=5).status_code
     except:
         logging.info("Error requesting to audit service")
+        audit_reponse = 500
+
     try:
-        processing_response = requests.get(app_config["services"]["processing"], timeout=5)
+        processing_response = requests.get(app_config["services"]["processing"], timeout=5).status_code
     except:
         logging.info("Error with processing service")
+        processing_response = 500
     
     try:
-        receiver_response = requests.get(app_config["services"]["receiver"], timeout=5)
+        receiver_response = requests.get(app_config["services"]["receiver"], timeout=5).status_code
     except:
         logging.info("Error with receiver service")
+        receiver_response = 500
     try:
-        storage_response = requests.get(app_config["services"]["storage"], timeout=5)
+        storage_response = requests.get(app_config["services"]["storage"], timeout=5).status_code
     except:
         logging.info("Error with storage service")
+        storage_response = 500
     audit = "Running" if audit_response.status_code == 200 else "Down"
     receiver = "Running" if receiver_response.status_code == 200 else "Down"
     processing = "Running" if processing_response.status_code == 200 else "Down"
