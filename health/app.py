@@ -40,12 +40,23 @@ logger.info(f"Logging Conf File: {app_conf_file}")
 def get_health():
     "Checks the status of all services"
 
+    try:
+        audit_response = requests.get(app_config["services"]["audit"], timeout=5)
+    except:
+        logging.info("Error requesting to audit service")
+    try:
+        processing_response = requests.get(app_config["services"]["processing"], timeout=5)
+    except:
+        logging.info("Error with processing service")
     
-    audit_response = requests.get(app_config["services"]["audit"], timeout=5)
-    processing_response = requests.get(app_config["services"]["processing"], timeout=5)
-    receiver_response = requests.get(app_config["services"]["receiver"], timeout=5)
-    storage_response = requests.get(app_config["services"]["storage"], timeout=5)
-
+    try:
+        receiver_response = requests.get(app_config["services"]["receiver"], timeout=5)
+    except:
+        logging.info("Error with receiver service")
+    try:
+        storage_response = requests.get(app_config["services"]["storage"], timeout=5)
+    except:
+        logging.info("Error with storage service")
     audit = "Running" if audit_response.status_code == 200 else "Down"
     receiver = "Running" if receiver_response.status_code == 200 else "Down"
     processing = "Running" if processing_response.status_code == 200 else "Down"
