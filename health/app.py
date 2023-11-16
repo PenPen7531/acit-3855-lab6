@@ -8,6 +8,7 @@ import logging
 import logging.config
 from flask_cors import CORS, cross_origin
 from apscheduler.schedulers.background import BackgroundScheduler
+import datetime
 
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In test environment")
@@ -72,9 +73,13 @@ def get_health():
         "receiver": receiver,
         "storage": storage,
         "processing": processing,
-        "audit": audit
+        "audit": audit,
+        "last_updated": datetime.datetime.now()
     }
+   
 
+    with open(app_config['filename'], "w") as file:
+        file.write(json.dumps(health_dict, indent=4))
     return health_dict, 200
 
 # Scheduler configuration
