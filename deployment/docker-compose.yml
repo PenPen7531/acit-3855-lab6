@@ -75,6 +75,9 @@ services:
     volumes:
       - /home/azureuser/config/storage:/config
       - /home/azureuser/logs:/logs
+
+
+  # Processing
   processing:
     image: processing
     ports:
@@ -87,6 +90,9 @@ services:
     volumes:
       - /home/azureuser/config/processing:/config
       - /home/azureuser/logs:/logs
+      - processing-db:/data
+
+  # Audit
   audit:
     image: audit
     ports:
@@ -116,3 +122,4 @@ services:
 
 volumes:
  my-db:
+ processing-db:

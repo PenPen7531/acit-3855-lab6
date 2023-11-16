@@ -52,7 +52,7 @@ def populate_stats():
     
     # Checks to see if file exists
     if os.path.isfile(app_config['datastore']['filename']) == False:
-        print('No file found')
+        logging.info('No file found. Creating new data.json file')
         # Default values if JSON file is not found
         data = {
             'num_req_off_readings': 0,
