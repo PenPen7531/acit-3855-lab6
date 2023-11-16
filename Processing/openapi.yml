@@ -8,6 +8,23 @@ info:
   version: 1.0.0
 
 paths:
+  /health:
+    get:
+      tags:
+      - health
+      summary: checks the status of the service
+      operationId: app.health
+      responses:
+        "200":
+          description: Return 200 if service is active
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Service is running"
   /stats:
     get:
       tags:

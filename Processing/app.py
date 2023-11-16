@@ -39,7 +39,8 @@ logger = logging.getLogger('basicLogger')
 logger.info(f"App Conf File: {app_conf_file}")
 logger.info(f"Logging Conf File: {app_conf_file}")
 
-
+def health():
+    return  'Service Online', 200
 
 
 def populate_stats():

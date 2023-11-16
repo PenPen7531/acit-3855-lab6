@@ -64,6 +64,10 @@ DB_ENGINE = create_engine(f"mysql+pymysql://{app_config['datastore']['user']}:{a
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
+def health():
+    return  'Service Online', 200
+
+
 def log_data(event_name, table, trace_id):
     logger.debug(f"Stored event {event_name} request in {table} table with a trace id of {trace_id}")
 

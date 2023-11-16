@@ -44,6 +44,9 @@ logger.info(f"App Conf File: {app_conf_file}")
 logger.info(f"Logging Conf File: {app_conf_file}")
 
 
+def health():
+    return  'Service Online', 200
+
 def log_action(event):
     "Logs action into log file"
 
