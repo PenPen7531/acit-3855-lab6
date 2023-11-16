@@ -69,12 +69,14 @@ def get_health():
     processing = "Running" if processing_response == 200 else "Down"
     storage = "Running" if storage_response == 200 else "Down"
 
+    current_date = datetime.datetime.now()
+    formatted_date = current_date.strftime("%Y-%m-%dT%H:%M:%SZ")
     health_dict = {
         "receiver": receiver,
         "storage": storage,
         "processing": processing,
         "audit": audit,
-        "last_updated": datetime.datetime.now()
+        "last_updated": formatted_date
     }
    
 
