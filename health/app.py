@@ -62,10 +62,10 @@ def get_health():
     except:
         logging.info("Error with storage service")
         storage_response = 500
-    audit = "Running" if audit_response.status_code == 200 else "Down"
-    receiver = "Running" if receiver_response.status_code == 200 else "Down"
-    processing = "Running" if processing_response.status_code == 200 else "Down"
-    storage = "Running" if storage_response.status_code == 200 else "Down"
+    audit = "Running" if audit_response == 200 else "Down"
+    receiver = "Running" if receiver_response == 200 else "Down"
+    processing = "Running" if processing_response == 200 else "Down"
+    storage = "Running" if storage_response == 200 else "Down"
 
     health_dict = {
         "receiver": receiver,
