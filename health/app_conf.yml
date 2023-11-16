@@ -5,3 +5,5 @@ services:
   storage: http://storage:8090/health
   
 port: 8120
+
+schedule_time: 5

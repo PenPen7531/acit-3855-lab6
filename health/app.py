@@ -7,6 +7,7 @@ import yaml
 import logging
 import logging.config
 from flask_cors import CORS, cross_origin
+from apscheduler.schedulers.background import BackgroundScheduler
 
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In test environment")
@@ -76,6 +77,13 @@ def get_health():
 
     return health_dict, 200
 
+# Scheduler configuration
+def init_scheduler():
+    sched = BackgroundScheduler(daemon=True)
+    sched.add_job(get_health, 'interval', seconds=app_config['schedule_time'])
+    sched.start()
+
+
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 CORS(app.app)
@@ -83,5 +91,7 @@ app.app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 if __name__ == "__main__":
+
+    init_scheduler()
     app.run(port=app_config['port'])
     
