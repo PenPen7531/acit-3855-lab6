@@ -3,13 +3,13 @@ import '../App.css';
 
 export default function EndpointAudit() {
     const [isLoaded, setIsLoaded] = useState(false);
-    const [log, setLog] = useState(null);
+    const [log, setLog] = useState({});
     const [error, setError] = useState(null);
     const [index, setIndex] = useState(null);
 	const rand_val = Math.floor(Math.random() * 100); // Get a random event from the event store
 
     const getAudit = () => {
-        fetch(`http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8120/health`)
+        fetch(`http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8120`)
             .then(res => res.json())
             .then((result)=>{
 			
@@ -34,8 +34,27 @@ export default function EndpointAudit() {
         
         return (
             <div>
-                <h3>Health Status</h3>
-                {JSON.stringify(log)}
+                <h1>Health Stats</h1>
+                <table className={"StatsTable"}>
+					<tbody>
+
+						<tr>
+							<td colspan="2">Receiver Status: {log['receiver']}</td>
+                        </tr>
+                        <tr>
+							<td colspan="2">Storage Status: {log['storage']}</td>
+						</tr>
+						<tr>
+							<td colspan="2">Processing Status: {log['processing']}</td>
+						</tr>
+						<tr>
+							<td colspan="2">Audit Status: {log['audit']}</td>
+						</tr>
+						
+					</tbody>
+                </table>
+                <h3>Last Updated: {stats['last_updated']}</h3>
+
             </div>
         )
     }
