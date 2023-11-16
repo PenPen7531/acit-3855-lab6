@@ -6,7 +6,7 @@ import requests
 import yaml
 import logging
 import logging.config
-
+from flask_cors import CORS, cross_origin
 
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In test environment")
@@ -46,18 +46,26 @@ def get_health():
     receiver_response = requests.get(app_config["services"]["receiver"], timeout=5)
     storage_response = requests.get(app_config["services"]["storage"], timeout=5)
 
+    audit = "Running" if audit_response.status_code == 200 else "Down"
+    receiver = "Running" if receiver_response.status_code == 200 else "Down"
+    processing = "Running" if processing_response.status_code == 200 else "Down"
+    storage = "Running" if storage_response.status_code == 200 else "Down"
+
     health_dict = {
-        "receiver": receiver_response.status_code,
-        "storage": storage_response.status_code,
-        "processing": processing_response.status_code,
-        "audit": audit_response.status_code
+        "receiver": receiver,
+        "storage": storage,
+        "processing": processing,
+        "audit": audit
     }
 
     return health_dict, 200
 
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
+CORS(app.app)
+app.app.config['CORS_HEADERS'] = 'Content-Type'
+
 
 if __name__ == "__main__":
     app.run(port=app_config['port'])
-    # app.run(port=8120)
+    
