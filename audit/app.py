@@ -9,7 +9,6 @@ import logging.config
 from pykafka import KafkaClient
 from threading import Thread
 from flask_cors import CORS, cross_origin
-import os
 PORT = 8110
 
 

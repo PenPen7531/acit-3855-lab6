@@ -1,0 +1,7 @@
+services:
+  audit: http://localhost:8110
+  processing: http://localhost:8100
+  receiver: http://localhost:8080
+  storage: http://localhost:8090
+  
+port: 8120

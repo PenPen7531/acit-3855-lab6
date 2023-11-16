@@ -119,6 +119,16 @@ services:
     depends_on:
     - processing
     - audit
+    
+  health:
+    image: health
+    ports:
+      - 8120:8120
+    environment:
+      - TARGET_ENV=test
+    volumes:
+      - /home/azureuser/config/health:/config
+      - /home/azureuser/logs:/logs
 
 volumes:
  my-db:
