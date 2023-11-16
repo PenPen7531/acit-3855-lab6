@@ -41,7 +41,7 @@ def get_health():
     "Checks the status of all services"
 
     
-    # audit_response = requests.get(app_config["services"]["audit"], timeout=5)
+    audit_response = requests.get(app_config["services"]["audit"], timeout=5)
     processing_response = requests.get(app_config["services"]["processing"], timeout=5)
     receiver_response = requests.get(app_config["services"]["receiver"], timeout=5)
     storage_response = requests.get(app_config["services"]["storage"], timeout=5)
@@ -50,7 +50,7 @@ def get_health():
         "receiver": receiver_response.status_code,
         "storage": storage_response.status_code,
         "processing": processing_response.status_code,
-        # "audit": audit_response.status_code
+        "audit": audit_response.status_code
     }
 
     return health_dict, 200
