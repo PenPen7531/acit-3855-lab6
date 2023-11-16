@@ -1,7 +1,7 @@
 services:
-  audit: acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8110/health
-  processing: acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8100/health
-  receiver: acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8080/health
-  storage: acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8090/health
+  audit: http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8110/health
+  processing: http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8100/health
+  receiver: http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8080/health
+  storage: http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8090/health
   
 port: 8120
