@@ -39,7 +39,7 @@ logger.info(f"Logging Conf File: {app_conf_file}")
 # with open("app_conf.yml", 'r') as f:
 #     app_config = yaml.safe_load(f.read())
 
-def get_health():
+def update_health():
     "Checks the status of all services"
 
     try:
@@ -84,10 +84,34 @@ def get_health():
         file.write(json.dumps(health_dict, indent=4))
     return health_dict, 200
 
+def get_health():
+    if os.path.isfile(app_config['filename']) == False:
+        logging.info('No file found. Creating new data.json file')
+        # Default values if JSON file is not found
+        current_date = datetime.datetime.now()
+        formatted_date = current_date.strftime("%Y-%m-%dT%H:%M:%SZ")
+    
+        data = {
+            "receiver": "Receiver Not Found",
+            "storage": "Storage Not Found",
+            "processing": "Processing Not Found",
+            "audit": "Audit Not Found",
+            "last_updated": formatted_date
+        }
+
+
+
+    # If file is found. Use data from this file
+    else:    
+    # Open file 
+        with open(app_config['filename'], "r") as file:
+                data= json.load(file)
+    return data, 200
+
 # Scheduler configuration
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(get_health, 'interval', seconds=app_config['schedule_time'])
+    sched.add_job(update_health, 'interval', seconds=app_config['schedule_time'])
     sched.start()
 
 
