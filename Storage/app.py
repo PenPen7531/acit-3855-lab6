@@ -21,15 +21,14 @@ from threading import Thread
 from sqlalchemy import and_
 from pykafka.exceptions import SocketDisconnectedError, LeaderNotAvailable
 import time
-
+import os
 
 
 
 # Constants and DB configuration
 PORT = 8090
 
-with open('app_conf.yml', 'r') as f:
-    app_config = yaml.safe_load(f.read())
+
 
 DB_ENGINE = create_engine(f"mysql+pymysql://{app_config['datastore']['user']}:{app_config['datastore']['password']}@{app_config['datastore']['hostname']}:{app_config['datastore']['port']}/{app_config['datastore']['db']}")
 Base.metadata.bind = DB_ENGINE
@@ -38,11 +37,30 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 
 
-with open('log_conf.yml', 'r') as f:
+if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
+    print("In test environment")
+    app_conf_file = "/config/app_conf.yml"
+    log_conf_file = "/config/log_conf.yml"
+else:
+    print("In test environment")
+    app_conf_file = "app_conf.yml"
+    log_conf_file = "log_conf.yml"
+
+# App configuration file
+with open(app_conf_file, 'r') as f:
+    app_config = yaml.safe_load(f.read())
+
+
+# Log configuration
+with open(log_conf_file, 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('basicLogger')
+
+logger.info(f"App Conf File: {app_conf_file}")
+logger.info(f"Logging Conf File: {app_conf_file}")
+
 
 def log_data(event_name, table, trace_id):
     logger.debug(f"Stored event {event_name} request in {table} table with a trace id of {trace_id}")

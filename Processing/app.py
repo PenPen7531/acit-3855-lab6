@@ -11,22 +11,33 @@ import logging.config
 from apscheduler.schedulers.background import BackgroundScheduler
 import uuid
 from flask_cors import CORS, cross_origin
+import os
 
 PORT = 8100
 
+if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
+    print("In test environment")
+    app_conf_file = "/config/app_conf.yml"
+    log_conf_file = "/config/log_conf.yml"
+else:
+    print("In test environment")
+    app_conf_file = "app_conf.yml"
+    log_conf_file = "log_conf.yml"
 
 # App configuration file
-with open('app_conf.yml', 'r') as f:
+with open(app_conf_file, 'r') as f:
     app_config = yaml.safe_load(f.read())
 
 
 # Log configuration
-with open('log_conf.yml', 'r') as f:
+with open(log_conf_file, 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('basicLogger')
 
+logger.info(f"App Conf File: {app_conf_file}")
+logger.info(f"Logging Conf File: {app_conf_file}")
 
 
 
