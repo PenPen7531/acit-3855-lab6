@@ -9,7 +9,7 @@ export default function EndpointAudit() {
 	const rand_val = Math.floor(Math.random() * 100); // Get a random event from the event store
 
     const getAudit = () => {
-        fetch(`http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/health`)
+        fetch(`http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/health/`)
             .then(res => res.json())
             .then((result)=>{
 			
@@ -22,7 +22,7 @@ export default function EndpointAudit() {
             })
     }
 	useEffect(() => {
-		const interval = setInterval(() => getAudit(), 4000); // Update every 4 seconds
+		const interval = setInterval(() => getAudit(), 20000); // Update every 4 seconds
 		return() => clearInterval(interval);
     }, [getAudit]);
 
