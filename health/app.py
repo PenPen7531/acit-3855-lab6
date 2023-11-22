@@ -46,7 +46,7 @@ def update_health():
         audit_response = requests.get(app_config["services"]["audit"], timeout=5).status_code
     except:
         logging.info("Error requesting to audit service")
-        audit_reponse = 500
+        audit_response = 500
 
     try:
         processing_response = requests.get(app_config["services"]["processing"], timeout=5).status_code
