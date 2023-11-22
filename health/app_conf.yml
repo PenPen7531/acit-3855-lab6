@@ -1,8 +1,8 @@
 services:
-  audit: http://audit:8110/health
-  processing: http://processing:8100/health
-  receiver: http://receiver:8080/health
-  storage: http://storage:8090/health
+  audit: http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/audit/health
+  processing: http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/processing/health
+  receiver: http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/receiver/health
+  storage: http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/storage/health
   
 port: 8120
 filename: /data/health_data.json
