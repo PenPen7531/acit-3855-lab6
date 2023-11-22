@@ -9,7 +9,7 @@ export default function EndpointAudit() {
 	const rand_val = Math.floor(Math.random() * 100); // Get a random event from the event store
 
     const getAudit = () => {
-        fetch(`http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com:8120`)
+        fetch(`http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/health`)
             .then(res => res.json())
             .then((result)=>{
 			

@@ -132,7 +132,9 @@ services:
   health:
     image: health
     ports:
-      - 8120:8120
+      - "8120"
+    networks:
+      - "api.network"
     environment:
       - TARGET_ENV=test
     volumes:
@@ -152,6 +154,7 @@ services:
       - "processing"
       - "audit"
       - "dashboard"
+      - "health"
     # Connects the port 80 of the nginx container to localhost:80 or localhost
     ports:
       - "80:80"
