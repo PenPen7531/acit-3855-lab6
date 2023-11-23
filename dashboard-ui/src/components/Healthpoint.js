@@ -7,7 +7,7 @@ export default function EndpointAudit() {
     const [error, setError] = useState(null);
     const [index, setIndex] = useState(null);
 	const rand_val = Math.floor(Math.random() * 100); // Get a random event from the event store
-
+    
     const getAudit = () => {
         fetch(`http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/health/`)
             .then(res => res.json())
@@ -31,7 +31,10 @@ export default function EndpointAudit() {
     } else if (isLoaded === false){
         return(<div>Loading...</div>)
     } else if (isLoaded === true){
-        
+        const date_now = new Date().getTime();
+        console.log(date_now);
+        const date_before = new Date(log['last_updated']);
+        console.log(date_before.toTimeString)
         return (
             <div>
                 <h1>Health Stats</h1>
