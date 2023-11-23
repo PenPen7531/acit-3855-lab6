@@ -54,36 +54,36 @@ def update_health():
     # Audit Service Get Request
     try:
         audit_response = requests.get(app_config["services"]["audit"], timeout=5).status_code
-        logging.info('Received status 200 for audit')
+        logger.info('Received status 200 for audit')
     except:
-        logging.info("Error requesting to audit service")
+        logger.info("Error requesting to audit service")
         audit_response = 500
 
 
     # Processing Service Get Request
     try:
         processing_response = requests.get(app_config["services"]["processing"], timeout=5).status_code
-        logging.info('Received status 200 for processing')
+        logger.info('Received status 200 for processing')
     except:
-        logging.info("Error with processing service")
+        logger.info("Error with processing service")
         processing_response = 500
     
 
     # Receiver Service Get Request
     try:
         receiver_response = requests.get(app_config["services"]["receiver"], timeout=5).status_code
-        logging.info('Received status 200 for receiver')
+        logger.info('Received status 200 for receiver')
     except:
-        logging.info("Error with receiver service")
+        logger.info("Error with receiver service")
         receiver_response = 500
 
 
     # Storage Service Get Request
     try:
         storage_response = requests.get(app_config["services"]["storage"], timeout=5).status_code
-        logging.info('Received status 200 for storage')
+        logger.info('Received status 200 for storage')
     except:
-        logging.info("Error with storage service")
+        logger.info("Error with storage service")
         storage_response = 500
 
     # If conditions to convert status code to running or down status message
@@ -96,7 +96,7 @@ def update_health():
     # Get current date to track last update time
     current_date = datetime.datetime.now()
     formatted_date = current_date.strftime("%Y-%m-%dT%H:%M:%SZ")
-    logging.info(f"Current Time: {formatted_date}")
+    logger.info(f"Current Time: {formatted_date}")
 
     # Dictionary 
     health_dict = {
@@ -110,14 +110,14 @@ def update_health():
     # Put dictionary to json file
     with open(app_config['filename'], "w") as file:
         file.write(json.dumps(health_dict, indent=4))
-        logging.info('Updated File')
+        logger.info('Updated File')
     return health_dict, 200
 
 def get_health():
 
     # If file is not found create new file
     if os.path.isfile(app_config['filename']) == False:
-        logging.info('No file found. Creating new data.json file')
+        logger.info('No file found. Creating new data.json file')
         # Default values if JSON file is not found
         current_date = datetime.datetime.now()
         formatted_date = current_date.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -135,7 +135,7 @@ def get_health():
 
     # If file is found. Use data from this file
     else:
-        logging.info('File found, sending data')    
+           
         # Open file 
         with open(app_config['filename'], "r") as file:
                 data= json.load(file)
