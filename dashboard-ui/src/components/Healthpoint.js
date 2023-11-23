@@ -22,7 +22,7 @@ export default function EndpointAudit() {
             })
     }
 	useEffect(() => {
-		const interval = setInterval(() => getAudit(), 4000); // Update every 4 seconds
+		const interval = setInterval(() => getAudit(), 1000); // Update every 4 seconds
 		return() => clearInterval(interval);
     }, [getAudit]);
 
@@ -58,7 +58,7 @@ export default function EndpointAudit() {
 					</tbody>
                 </table>
                  <h3>Last Updated: {log['last_updated']}</h3>
-                <h3>Last Updated: {Math.abs(date_now - date_before)}</h3>
+                <h3>Last Updated: {Math.abs(date_now - date_before)} Seconds Ago</h3>
             </div>
         )
     }
