@@ -35,7 +35,7 @@ export default function EndpointAudit() {
         const date_before = new Date(log['last_updated']).getSeconds();
 
 
-        console.log(abs(date_now - date_before));
+        console.log(date_now,  date_before);
         return (
             <div>
                 <h1>Health Stats</h1>
