@@ -32,10 +32,10 @@ export default function EndpointAudit() {
 
 
         // Get current seconds
-        const date_now = new Date().getSeconds();
+        const date_now = new Date();
 
         // Get seconds from json data
-        const date_before = new Date(log['last_updated']).getSeconds();
+        const date_before = new Date(log['last_updated']);
 
 
         // console.log(date_now,  date_before);
@@ -62,7 +62,7 @@ export default function EndpointAudit() {
                 </table>
                 <h3>Last Updated: {log['last_updated']}</h3>
                 
-                <h3>Last Updated: {Math.abs(date_now - date_before)} Seconds Ago</h3>
+                <h3>Last Updated: {(date_before.gettTime() - date_now.getTime()) / 1000 } Seconds Ago</h3>
             </div>
         )
     }
