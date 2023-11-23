@@ -31,10 +31,11 @@ export default function EndpointAudit() {
     } else if (isLoaded === false){
         return(<div>Loading...</div>)
     } else if (isLoaded === true){
-        const date_now = new Date().getTime();
-        console.log(date_now);
+        const date_now = new Date().toTimeString();
         const date_before = new Date(log['last_updated']);
-        console.log(date_before.toTimeString)
+        date_before = date_before.toTimeString()
+
+        console.log(date_now, date_before);
         return (
             <div>
                 <h1>Health Stats</h1>
