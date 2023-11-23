@@ -32,8 +32,8 @@ export default function EndpointAudit() {
         return(<div>Loading...</div>)
     } else if (isLoaded === true){
         const date_now = new Date().toTimeString();
-        const date_before = new Date(log['last_updated']);
-        date_before = date_before.toTimeString()
+        const date_before = new Date(log['last_updated']).toTimeString();
+
 
         console.log(date_now, date_before);
         return (
