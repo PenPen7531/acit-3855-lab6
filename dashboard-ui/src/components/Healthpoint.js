@@ -5,8 +5,6 @@ export default function EndpointAudit() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [log, setLog] = useState({});
     const [error, setError] = useState(null);
-    const [index, setIndex] = useState(null);
-	const rand_val = Math.floor(Math.random() * 100); // Get a random event from the event store
     
     const getAudit = () => {
         fetch(`http://acit-3855-kakfa-jwang.eastus.cloudapp.azure.com/health/`)
@@ -14,7 +12,7 @@ export default function EndpointAudit() {
             .then((result)=>{
 			
                 setLog(result);
-                setIndex(rand_val)
+               
                 setIsLoaded(true);
             },(error) =>{
                 setError(error)
@@ -22,7 +20,7 @@ export default function EndpointAudit() {
             })
     }
 	useEffect(() => {
-		const interval = setInterval(() => getAudit(), 1000); // Update every 4 seconds
+		const interval = setInterval(() => getAudit(), 1000); // Update every 1 seconds
 		return() => clearInterval(interval);
     }, [getAudit]);
 
@@ -31,7 +29,12 @@ export default function EndpointAudit() {
     } else if (isLoaded === false){
         return(<div>Loading...</div>)
     } else if (isLoaded === true){
+
+
+        // Get current seconds
         const date_now = new Date().getSeconds();
+
+        // Get seconds from json data
         const date_before = new Date(log['last_updated']).getSeconds();
 
 
@@ -57,7 +60,8 @@ export default function EndpointAudit() {
 						
 					</tbody>
                 </table>
-                 <h3>Last Updated: {log['last_updated']}</h3>
+                <h3>Last Updated: {log['last_updated']}</h3>
+                
                 <h3>Last Updated: {Math.abs(date_now - date_before)} Seconds Ago</h3>
             </div>
         )
