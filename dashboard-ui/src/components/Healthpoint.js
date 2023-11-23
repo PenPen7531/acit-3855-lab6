@@ -36,7 +36,7 @@ export default function EndpointAudit() {
 
         // Get seconds from json data
         const date_before = new Date(log['last_updated']);
-        const date_dif = (date_now.getTime()  - date_before.getTime()) / 1000;
+        const date_dif = Math.round((date_now.getTime()  - date_before.getTime()) / 1000);
 
         // console.log(date_now,  date_before);
         return (
