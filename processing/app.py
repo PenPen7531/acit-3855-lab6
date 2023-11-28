@@ -1,6 +1,5 @@
 # Packages for project
-import connexion
-from connexion import NoContent
+
 import json
 import datetime
 import os
@@ -9,9 +8,10 @@ import yaml
 import logging
 import logging.config
 from apscheduler.schedulers.background import BackgroundScheduler
-import uuid
 from flask_cors import CORS, cross_origin
-import os
+import connexion
+from connexion import NoContent
+
 
 PORT = 8100
 
@@ -52,7 +52,7 @@ def populate_stats():
     
     
     # Checks to see if file exists
-    if os.path.isfile(app_config['datastore']['filename']) == False:
+    if not os.path.isfile(app_config['datastore']['filename']):
         logging.info('No file found. Creating new data.json file')
         # Default values if JSON file is not found
         data = {
