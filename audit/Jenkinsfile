@@ -1,5 +1,5 @@
 @Library('acit-3855-lab6@main') _ 
-pipeline('audit')
+shared_pipeline('audit')
 
 // pipeline {
 //         agent any
