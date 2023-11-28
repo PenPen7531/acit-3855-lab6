@@ -16,6 +16,15 @@ def call(imageName) {
                     sh "pylint --fail-under=5.0 ${imageName}/*.py"
                 }
             }
+            stage('Package') {
+                steps {
+                    withCredentials([string(credentialsId: 'Jwang-Dockerhub', variable: 'TOKEN')]) {
+                        sh "docker login -u 'penpen7531' -p '$TOKEN' docker.io"
+                        sh "docker build -t penpen7531/${imageName}:latest ${imageName}/."
+                        sh "docker push penpen7531/${imageName}:latest"
+                    } 
+                }
+            }
             
         }
     }
