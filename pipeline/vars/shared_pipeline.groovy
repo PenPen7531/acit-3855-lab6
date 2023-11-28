@@ -21,14 +21,16 @@ def call(imageName) {
                     } 
                 }
             }
+
             stage('Deploy'){
+                steps{
                 sshagent(credentials: ['SSH']) {
                 sh '''
                     echo "Hello World"
                 '''
-    }
+                 }   
             }
-            
+            }
         }
     }
 }
