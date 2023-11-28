@@ -129,7 +129,7 @@ def populate_stats():
 
     # Log a debug message with update statistics
     logger.debug(f"\nUpdated Statistics: \n\tNumber of new employee entries: {data['num_employee_readings']}\n\tNumber of new request leave entries: {data['num_req_off_readings']}\n\tMax number off days off:{data['max_days_off']}\n\tMax number of hours off: {data['max_hours_off']}\n\tLast Updated: {formatted_date} ")
-    
+
     # Log a info message indicating period processing has ended
     logger.info('Period Processing has ended')
 
@@ -139,7 +139,7 @@ def get_stats():
     if os.path.isfile(app_config['datastore']['filename']) == False:
         logger.error('404 - Statistics do not exist')
         return "Statistics do not exist", 404
-    
+
     with open(app_config['datastore']['filename'], "r") as file:
         data = json.load(file)
     logger.debug(data)
@@ -168,10 +168,4 @@ if "TARGET_ENV" not in os.environ or os.environ["TARGET_ENV"] != "test":
 if __name__ == "__main__":
     # Starts logger
     init_scheduler()
-   
-    
     app.run(port=PORT, use_reloader=False)
-    
-
-    
-    
