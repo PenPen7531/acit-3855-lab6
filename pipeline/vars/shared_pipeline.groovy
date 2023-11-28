@@ -2,7 +2,7 @@ def call(image) {
     pipeline {
         agent any
         parameters {
-            booleanParam(defaultValue: false, description: 'Deploy the App', name: 'DEPLOY')
+            booleanParam(defaultValue: false, description: 'Deploy the App', name:'DEPLOY')
         }
         stages {
         
