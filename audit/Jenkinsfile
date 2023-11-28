@@ -1,5 +1,5 @@
 @Library('acit-3855-lab6@main') _ 
-python_build('audit')
+pipeline('audit')
 
 // pipeline {
 //         agent any
