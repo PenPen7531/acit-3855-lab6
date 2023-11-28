@@ -1,10 +1,7 @@
 # Packages for project
-import connexion
-from connexion import NoContent
+
 import json
 import datetime
-import os
-import requests
 import yaml
 import logging
 import logging.config
@@ -13,6 +10,9 @@ import uuid
 import time
 from pykafka.exceptions import SocketDisconnectedError, LeaderNotAvailable
 import os
+import connexion
+from connexion import NoContent
+
 # File and Event Constants
 EVENT_FILE = 'events.json'
 MAX_EVENTS = 10
@@ -61,28 +61,21 @@ def log_reponse(event, unique_id, status_code):
     "Logs reponse from Storage"
     logger.info(f'Received event {event} response (ID: {unique_id}) with status code {status_code}')
 
-    
+
 
 def request_time(body):
     "Request time off for employees. Sends an API request to the DB server to process and store the information"
-    
-    
+
+
     # Sends a post request to the storage/DB program that will save the entries into a DB
     # Specifies the localhost (Can be changed when put into multiple different VMs, content type: json, and the json data sent will be the argument data)
-    
-
 
     u_id = log_action('Request Time')
 
     body['trace_id'] = str(u_id)
     
     logger.info(f"Received Event: Trace ID {body['trace_id']}")
-   
 
-
-
-
- 
     msg = { "type": "time",
     "datetime" :
     datetime.datetime.now().strftime(
