@@ -17,27 +17,27 @@ PORT = 8100
 
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In test environment")
-    app_conf_file = "/config/app_conf.yml"
-    log_conf_file = "/config/log_conf.yml"
+    APP_CONF_FILE = "/config/app_conf.yml"
+    LOG_CONF_FILE = "/config/log_conf.yml"
 else:
     print("In test environment")
-    app_conf_file = "app_conf.yml"
-    log_conf_file = "log_conf.yml"
+    APP_CONF_FILE = "app_conf.yml"
+    LOG_CONF_FILE = "log_conf.yml"
 
 # App configuration file
-with open(app_conf_file, 'r') as f:
+with open(APP_CONF_FILE, 'r') as f:
     app_config = yaml.safe_load(f.read())
 
 
 # Log configuration
-with open(log_conf_file, 'r') as f:
+with open(LOG_CONF_FILE, 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('basicLogger')
 
-logger.info(f"App Conf File: {app_conf_file}")
-logger.info(f"Logging Conf File: {app_conf_file}")
+logger.info(f"App Conf File: {APP_CONF_FILE}")
+logger.info(f"Logging Conf File: {APP_CONF_FILE}")
 
 def health():
     return  'Service Online', 200
@@ -48,9 +48,8 @@ def populate_stats():
     # Logs starting periodic processing
     logger.info('Start Periodic Processing')
 
-    
-    
-    
+
+
     # Checks to see if file exists
     if not os.path.isfile(app_config['datastore']['filename']):
         logging.info('No file found. Creating new data.json file')
@@ -69,8 +68,7 @@ def populate_stats():
     else:    
     # Open file 
         with open(app_config['datastore']['filename'], "r") as file:
-                data= json.load(file)
-
+            data= json.load(file)
     # Get datetime
     current_date = datetime.datetime.now()
 
@@ -78,7 +76,8 @@ def populate_stats():
     formatted_date = current_date.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # Query employee endpoint
-    employee_response = requests.get(f"{app_config['eventstore']['url']}/employee?start_timestamp={data['last_updated']}&end_timestamp={formatted_date}", timeout=30)
+    employee_response = requests.get(f"{app_config['eventstore']['url']}/employee?start_timestamp={data['last_updated']}&end_timestamp={formatted_date}"\
+                                     , timeout=30)
     
     # Log success or fail status code depending on response
     if employee_response.status_code == 200:
