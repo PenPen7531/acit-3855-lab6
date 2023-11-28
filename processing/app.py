@@ -3,10 +3,10 @@
 import json
 import datetime
 import os
-import requests
-import yaml
 import logging
 import logging.config
+import requests
+import yaml
 from apscheduler.schedulers.background import BackgroundScheduler
 from flask_cors import CORS, cross_origin
 import connexion
@@ -78,7 +78,7 @@ def populate_stats():
     formatted_date = current_date.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # Query employee endpoint
-    employee_response = requests.get(f"{app_config['eventstore']['url']}/employee?start_timestamp={data['last_updated']}&end_timestamp={formatted_date}")
+    employee_response = requests.get(f"{app_config['eventstore']['url']}/employee?start_timestamp={data['last_updated']}&end_timestamp={formatted_date}", timeout=30)
     
     # Log success or fail status code depending on response
     if employee_response.status_code == 200:
@@ -89,7 +89,7 @@ def populate_stats():
 
 
     # Query timeoff endpoint
-    timeoff_response = requests.get(f"{app_config['eventstore']['url']}/requestleave?start_timestamp={data['last_updated']}&end_timestamp={formatted_date}")
+    timeoff_response = requests.get(f"{app_config['eventstore']['url']}/requestleave?start_timestamp={data['last_updated']}&end_timestamp={formatted_date}", timeout=30)
 
 
     # Log success or fail status code depdning on reponse
@@ -150,6 +150,7 @@ def get_stats():
 
 # Scheduler configuration
 def init_scheduler():
+    "Starts the scheduler"
     sched = BackgroundScheduler(daemon=True)
     sched.add_job(populate_stats, 'interval', seconds=app_config['scheduler']['period_sec'])
     sched.start()
