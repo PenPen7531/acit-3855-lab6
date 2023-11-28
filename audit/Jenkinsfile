@@ -1,2 +1,2 @@
 @Library('3855_shared@main') _ 
-python_build('audit')
+call('audit')
