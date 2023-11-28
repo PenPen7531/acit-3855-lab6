@@ -14,7 +14,6 @@ def call(image) {
             }
             stage ('Security Check'){
                 steps{
-                    sh "pip install safety check"
                     sh "safety check -r ${image}/requirements.txt --full-report -o text --continue-on-error"
                 }
                 
