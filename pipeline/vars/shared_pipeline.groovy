@@ -25,6 +25,9 @@ def call(imageName) {
 
             stage('Deploy'){
                 steps{
+                    when {
+                        expression { params.DEPLOY }
+                    }
                     sshagent(credentials: ['SSH']) {
                     
                         sh "ssh -o StrictHostKeyChecking=no -l azureuser 172.178.11.14 'cd ~/acit-3855-lab6/deployment && docker pull penpen7531/${imageName}:latest && docker-compose up -d'"
