@@ -5,7 +5,7 @@ def call(imageName) {
             booleanParam(defaultValue: false, description: 'Deploy the App', name: 'DEPLOY')
         }
         stages {
-            }
+        
             stage('Lint') {
                 steps {
                     sh "pip install -r ${imageName}/requirements.txt --break-system-packages"
