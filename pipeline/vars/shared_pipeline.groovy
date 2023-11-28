@@ -13,7 +13,10 @@ def call(imageName) {
                 }
             }
             stage ('Security Check'){
-                sh "safety check -r ${imageName}/requirements.txt --full-report -o text --continue-on-error"
+                steps{
+                    sh "safety check -r ${imageName}/requirements.txt --full-report -o text --continue-on-error"
+                }
+                
             }
             stage('Package') {
                 steps {
