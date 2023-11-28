@@ -18,6 +18,7 @@ def call(imageName) {
                         sh "docker login -u 'penpen7531' -p '$TOKEN' docker.io"
                         sh "docker build -t penpen7531/${imageName}:latest ${imageName}/."
                         sh "docker push penpen7531/${imageName}:latest"
+                        sh "echo Package Completed"
                     } 
                 }
             }
