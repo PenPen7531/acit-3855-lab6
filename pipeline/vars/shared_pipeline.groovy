@@ -12,6 +12,9 @@ def call(imageName) {
                     sh "pylint --fail-under=5.0 ${imageName}/*.py"
                 }
             }
+            stage ('Security Check'){
+                sh "safety check -r ${imageName}/requirements.txt --full-report -o text --continue-on-error"
+            }
             stage('Package') {
                 steps {
                     withCredentials([string(credentialsId: 'Jwang-Dockerhub', variable: 'TOKEN')]) {
