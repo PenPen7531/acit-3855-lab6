@@ -5,10 +5,6 @@ def call(imageName) {
             booleanParam(defaultValue: false, description: 'Deploy the App', name: 'DEPLOY')
         }
         stages {
-            stage('test'){
-                steps{
-                    sh "echo hello world"
-                }
             }
             stage('Lint') {
                 steps {
