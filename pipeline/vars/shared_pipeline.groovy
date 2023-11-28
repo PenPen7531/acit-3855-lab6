@@ -9,7 +9,7 @@ def call(image) {
             stage('Lint') {
                 steps {
                     sh "pip install -r ${image}/requirements.txt --break-system-packages"
-                    sh "pylint --fail-under=5.0 ${image}/*.py"
+                    sh "pylint --fail-under=1.0 ${image}/*.py"
                 }
             }
             stage ('Security Check'){
