@@ -1,16 +1,16 @@
 pipeline {
     agent any
     // Deploy application from 3855 VM 
-    stage('Deploy'){
+    stages{
+        stage('Deploy'){
 
-    // Only run when deploy param is checked
-    
-
-    // Use SSH credentials for key
-        steps {
-            sshagent(credentials: ['SSH']) {
-                sh "ssh -o StrictHostKeyChecking=no -l azureuser 172.178.11.14 'cd ~/acit-3855-lab6/deployment && docker pull penpen7531/processing:latest && docker pull penpen7531/receiver:latest && docker pull penpen7531/audit:latest && docker pull penpen7531/storage:latest && docker-compose up -d'"
-            }   
+        // Only run when deploy param is checked
+        // Use SSH credentials for key
+            steps {
+                sshagent(credentials: ['SSH']) {
+                    sh "ssh -o StrictHostKeyChecking=no -l azureuser 172.178.11.14 'cd ~/acit-3855-lab6/deployment && docker pull penpen7531/processing:latest && docker pull penpen7531/receiver:latest && docker pull penpen7531/audit:latest && docker pull penpen7531/storage:latest && docker-compose up -d'"
+                }   
+            }
         }
     }
 }
