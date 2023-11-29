@@ -52,7 +52,7 @@ services:
       - my-db:/var/lib/mysql
 # Names our volume
   receiver:
-    image: receiver
+    image: penpen7531/receiver:latest
     ports: 
       - "8080"
     networks:
@@ -65,7 +65,7 @@ services:
       - /home/azureuser/config/receiver:/config
       - /home/azureuser/logs:/logs
   storage:
-    image: storage
+    image: penpen7531/storage:latest
     ports:
       - "8090"
     networks:
@@ -82,7 +82,7 @@ services:
 
   # Processing
   processing:
-    image: processing
+    image: penpen7531/processing:latest
     ports:
       - "8100"
     networks:
@@ -99,7 +99,7 @@ services:
 
   # Audit
   audit:
-    image: audit
+    image: penpen7531/audit:latest
     ports:
       - "8110"
     networks:
