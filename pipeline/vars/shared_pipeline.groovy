@@ -14,7 +14,8 @@ def call(image) {
             }
             stage ('Security Check'){
                 steps{
-                    sh "safety check -r ${image}/ --full-report -o text --continue-on-error"
+                    sh "safety check -r ${image}/requirements.txt --full-report -o text --continue-on-error"
+                    sh "cd /${image} && safety check --full-report -o text --continue-on-error"
                 }
                 
             }
