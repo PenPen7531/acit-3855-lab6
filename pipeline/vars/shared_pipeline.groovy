@@ -18,6 +18,7 @@ def call(image) {
             }
 
             // Scans for vulnerabilities in requirements.txt
+            // Scans for known security vulnerability in packages
             // DOCS: https://pypi.org/project/safety/ 
 
             stage ('Security Check'){
