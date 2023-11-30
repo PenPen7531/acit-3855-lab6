@@ -124,12 +124,12 @@ def process_messages():
         try:
             client = KafkaClient(hosts=hostname, socket_timeout_ms=5000, offsets_channel_socket_timeout_ms=5000)
             topic = client.topics[str.encode(app_config["events"]["topic"])]
-
+            logging.info('Topic Successful')
             # Create a consume on a consumer group, that only reads new messages
             # (uncommitted messages) when the service re-starts (i.e., it doesn't
             # read all the old messages from the history in the message queue).
             consumer = topic.get_balanced_consumer(consumer_group=b'events',reset_offset_on_start=False, auto_commit_enabled=True, auto_commit_interval_ms=100)
-            logger.info("Connection Successful")
+            logging.info("Connection Successful")
             # Break loop after connection successful
             break
 
