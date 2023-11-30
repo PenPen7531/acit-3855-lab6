@@ -128,7 +128,7 @@ def process_messages():
             # Create a consume on a consumer group, that only reads new messages
             # (uncommitted messages) when the service re-starts (i.e., it doesn't
             # read all the old messages from the history in the message queue).
-            consumer = topic.get_balanced_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST, auto_commit_enable=True, zookeeper_connect='http://zookeeper:2181')
+            consumer = topic.get_simple_consumer(consumer_group=b'event',reset_offset_on_start=False,auto_offset_reset=OffsetType.LATEST)
             logger.info("Connection Successful")
 
             # Break loop after connection successful
