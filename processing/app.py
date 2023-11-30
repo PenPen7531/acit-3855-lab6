@@ -47,6 +47,7 @@ def populate_stats():
 
     # Logs starting periodic processing
     logger.info('Start Periodic Processing')
+    logger.info('Processing TEST')
 
 
 
